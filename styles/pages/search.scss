@@ -1,0 +1,130 @@
+#m_search_route {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: unset;
+  overflow-x: unset;
+  overflow-y: unset;
+
+  .search-header-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1em;
+  }
+
+  .search-nav-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .tab-nav-items {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .tab-nav-item {
+    flex: 1;
+    font-size: 0.75em;
+  }
+
+  .search-result-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bubble.custom {
+    padding: 0;
+    width: 2.2em;
+    height: 2.2em;
+    justify-content: center;
+  }
+
+  .material-input {
+    margin-top: 0 !important;
+  }
+
+  .fc-suggestions-side-bar-new {
+    width: 100%;
+  }
+
+  .spacer {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .timeline-spacer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 8em 0 8em 0;
+  }
+
+  .timeline-spacer i {
+    font-size: 2em;
+  }
+
+  .follower {
+    padding: 8px;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .fc-account-username {
+    width: 48px;
+    height: 48px;
+  }
+
+  .search-result-container {
+    padding: 0 0.5em 0 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .tag-row {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    cursor: pointer;
+  }
+
+  @media (hover: hover) {
+    .tag-row:hover {
+      background-color: var(--blue-1-alpha-2);
+    }
+
+    .follower:hover {
+      background-color: var(--blue-1-alpha-2);
+    }
+  }
+
+  .tag-suggestion-container {
+    padding: 0em 0.5em 1em 1em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .text-margin-bubble {
+    margin: 1.4375em 0;
+  }
+
+  .title-container {
+    padding: 0 0.5em 0 1em;
+  }
+
+  .fc-media-offer-suggestions-timeline-post .fyp-gallery {
+    height: 250px;
+  }
+
+  .fc-media-offer-suggestions-timeline-post {
+    margin-top: -8px;
+  }
+}

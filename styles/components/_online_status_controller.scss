@@ -1,0 +1,30 @@
+.fc-online-status-controller {
+  .status-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    height: 1.75em;
+    width: 6em;
+    justify-content: center;
+  }
+
+  .status-wrapper:hover {
+    background-color: var(--hover-dark-blue);
+  }
+
+  .status-icon {
+    font-size: 0.625em;
+    margin-right: 0.5em;
+    line-height: 1;
+  }
+
+  .status-text {
+    font-weight: 400;
+    font-size: 0.825em;
+    line-height: 1;
+    padding: 0.5em 0;
+    width: 3.5em;
+    color: var(--font-1);
+  }
+}

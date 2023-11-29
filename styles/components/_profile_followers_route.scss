@@ -1,0 +1,31 @@
+.fc-profile-followers-route {
+  display: flex;
+  flex-direction: column;
+
+  .spacer {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .timeline-spacer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 8em 0 8em 0;
+  }
+
+  .timeline-spacer i {
+    font-size: 2em;
+  }
+
+  .follower {
+    padding: 8px;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .fc-account-username {
+    width: 48px;
+    height: 48px;
+  }
+}

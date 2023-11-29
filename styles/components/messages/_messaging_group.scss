@@ -1,0 +1,125 @@
+.fc-messaging-group {
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 auto;
+  align-items: center;
+  border-radius: 0em;
+  padding: 1em 0.5em;
+  font-size: 16px;
+  line-height: 1.2;
+  position: relative;
+  cursor: pointer;
+
+  border-bottom: 1px solid transparent;
+}
+
+.fc-messaging-group.selected {
+  background-color: var(--pure-black);
+}
+
+.fc-messaging-group {
+  a {
+    text-decoration: none;
+  }
+
+  .badge-container {
+    flex: 0 0 auto;
+    width: 32px;
+    padding: 0 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .badge {
+    background-color: var(--blue-2);
+    width: 18px;
+    font-size: 12px;
+    height: 18px;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    color: var(--pure-white);
+    font-weight: bold;
+    letter-spacing: 0;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-left: 0.5em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .badge.absolute {
+    position: absolute;
+    top: 24px;
+    right: 12px;
+  }
+
+  .badge span {
+    font-size: 12px;
+    line-height: 16px;
+    vertical-align: middle;
+    letter-spacing: 0;
+  }
+
+  .message-contact {
+    flex: 1;
+    font-weight: bold;
+    font-size: 1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--font-1);
+  }
+
+  .message-time {
+    flex: 0 0 auto;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: var(--dark-blue-1);
+    font-size: 0.75em;
+  }
+
+  .message-avatar {
+    flex: 0 0 auto;
+    margin-right: 0.75em;
+  }
+
+  .message-avatar .avatar {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+  }
+
+  .favorite-message {
+    margin: 0 1em 0 0.7em;
+    color: var(--pure-black);
+  }
+
+  .favorite-message.favorite {
+    color: var(--blue-1);
+  }
+
+  .favorite-message i {
+    font-size: 1.25em;
+  }
+
+  .fc-account-avatar,
+  .fc-account-username {
+    pointer-events: none !important;
+  }
+
+  .fc-account-username {
+    min-height: 0;
+  }
+
+  .avatar {
+    pointer-events: none !important;
+  }
+
+  .fc-account-username .transparent-dropdown {
+    pointer-events: all !important;
+  }
+}

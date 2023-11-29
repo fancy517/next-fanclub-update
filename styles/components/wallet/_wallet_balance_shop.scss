@@ -1,0 +1,56 @@
+.fc-wallet-balance-shop {
+  background-color: var(--dropdown-bg-color) !important;
+  padding: 0 !important;
+  margin: 0 1em;
+  overflow-y: auto;
+  max-height: 35em;
+}
+
+.fc-wallet-balance-shop {
+  .gem-purchase-option {
+    align-items: center;
+    padding: 0.85em 0em 0.85em 0em;
+    border-bottom: 1px solid var(--border-color);
+    justify-content: space-around;
+
+    i,
+    svg {
+      margin-right: 0.3em;
+      font-size: 1.25em;
+    }
+  }
+
+  .valentine-red {
+    font-weight: bolder;
+  }
+
+  .gem-purchase-option > div:nth-child(1) {
+    width: 16em;
+    flex: 0 0 auto;
+  }
+
+  .gem-purchase-option > div:nth-child(2) {
+    width: 6em;
+    flex: 0 0 auto;
+    text-align: center;
+  }
+
+  .purchase-btn {
+    flex: 0 0 auto;
+  }
+
+  .old-price {
+    text-decoration: line-through;
+    margin-right: 0.5em;
+  }
+
+  .gem-balance-container {
+    font-size: 1.25em;
+    padding: 1em 3em;
+    border: 2px solid var(--border-color);
+  }
+
+  .fixed-width-button {
+    min-width: 4.5em;
+  }
+}

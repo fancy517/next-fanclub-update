@@ -1,0 +1,619 @@
+.fc-nav-bar-mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--dark-1);
+  border-top: 1px solid var(--border-color);
+  padding: 0.75em 0 1.5em 0;
+  z-index: 3;
+  font-size: 0.875em;
+}
+
+.fc-nav-bar-mobile {
+  .nav-content-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-side {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-bar-item:not(.selected) .fas {
+    display: none;
+  }
+
+  .nav-bar-item.selected .far {
+    display: none;
+  }
+
+  .middle-side {
+    flex: 1;
+    max-width: 25em;
+    min-width: 10em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .right-side {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .search-dropdown {
+    position: absolute;
+    top: 3em;
+    left: 0;
+    min-width: 11em;
+    width: auto;
+    background-color: var(--dark-3);
+    border-radius: var(--border-radius-2);
+    max-height: 19em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+  }
+
+  .search-dropdown .search-dropdown-item {
+    flex: 0 0 auto;
+    padding: 0.5em 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .search-dropdown .search-dropdown-item:hover {
+    background-color: var(--dropdown-bg-color-hover);
+    border-radius: var(--border-radius-2);
+  }
+
+  .search-input-wrapper input:focus + .search-dropdown,
+  .search-dropdown:hover {
+    display: flex;
+  }
+
+  .search-dropdown .search-dropdown-item .fc-account-avatar {
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+  }
+
+  .search-input input + .search-dropdown {
+    display: none;
+  }
+
+  .search-input input:focus + .search-dropdown {
+    display: flex;
+  }
+
+  .search-input .search-dropdown:hover {
+    display: flex !important;
+  }
+
+  .mobile-search .dropdown-list {
+    position: fixed;
+    left: 0;
+    right: 0;
+    transform-origin: top center;
+    top: calc(3.25em);
+    padding-top: 0;
+  }
+
+  .search-input-wrapper {
+    flex: 1;
+    font-size: 0.875em;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: center;
+    margin: 0 1em 0 1.5em;
+  }
+
+  .flex-spacer {
+    flex: 1;
+  }
+
+  .search-input {
+    flex: 1;
+    max-width: 30em;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .mobile-search .search-input {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.875em;
+    max-width: unset;
+  }
+
+  .mobile-search .dropdown-list {
+    background-color: var(--dropdown-bg-color);
+    padding: 1em;
+  }
+
+  .search-icon-container {
+    position: absolute;
+    left: 1em;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    color: #50a7e1;
+  }
+
+  .search-icon-container i,
+  .search-icon-container svg {
+    font-size: 1em;
+    margin-top: 0em;
+    vertical-align: center;
+  }
+
+  .search-input input {
+    font-size: 1em;
+    padding: 1em 1em 0.9em 3em;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    color: var(--dark-blue-1);
+  }
+
+  .search-input input::placeholder {
+    font-size: 1em;
+  }
+
+  .notifications {
+    flex: 0 0 auto;
+    margin: 0 0.75em;
+    color: var(--font-tint-3);
+    cursor: pointer;
+    position: relative;
+  }
+
+  .notifications i,
+  .notifications svg {
+    font-size: 1.25em;
+  }
+
+  .notifications:hover {
+    color: var(--blue-1);
+  }
+
+  .nav-bar-item {
+    flex: 0 0 auto;
+    line-height: 1;
+    margin: 0 0.75em;
+    color: var(--font-tint-3);
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      color: var(--blue-1);
+    }
+
+    &.selected {
+      color: var(--blue-1);
+    }
+
+    i,
+    svg {
+      font-size: 1.25em;
+      line-height: 1;
+    }
+  }
+
+  .notifications .dropdown-list {
+    font-size: 0.55em;
+    z-index: 2;
+    right: -1em;
+    top: 1.5em;
+    width: 15em;
+    padding: 0;
+    flex-direction: column;
+    background-color: transparent;
+    color: var(--dark-blue-1);
+  }
+
+  .more-dropdown .dropdown-item {
+  }
+
+  .balance-component {
+    min-width: 0;
+    align-self: center;
+    font-size: 0.875em;
+    background-color: var(--dark-1-2);
+    padding: 0.39em 1em;
+    border-radius: var(--border-radius-2);
+    font-weight: bold;
+  }
+
+  .balance-dropdown {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .notifications .dropdown-list-wrapper {
+    margin-top: 1.5em;
+    border-radius: 0.5em;
+    background-color: var(--dropdown-bg-color);
+    box-shadow: var(--box-shadow-1);
+  }
+
+  .notifications .dropdown-item {
+    width: 100%;
+    flex: 0 0 auto;
+    color: var(--pure-inversed);
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+
+  .notifications .dropdown-item .notification-text {
+    flex: 1;
+    text-align: left;
+  }
+
+  .notifications .dropdown-item .notification-time {
+    flex: 0 0 auto;
+    margin: 0 0 0 0.25em;
+  }
+
+  .notifications .dropdown-item.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .notifications .dropdown-item.nohover:hover {
+    background-color: transparent;
+  }
+
+  .notification-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 12px;
+    height: 12px;
+    font-size: 11px;
+    text-align: center;
+    color: var(--pure-white);
+    font-weight: bold;
+    padding: 5px;
+    background-color: var(--blue-2);
+    line-height: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: Center;
+    border-radius: 100%;
+  }
+
+  .user-account {
+    flex: 0 0 auto;
+    font-size: 0.875em;
+    margin: 0 0.75em 0 1.25em;
+  }
+
+  .user-avatar {
+    height: 2.5em;
+    position: relative;
+    width: 2.5em;
+  }
+
+  .avatar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .user-account .dropdown-icon {
+    font-size: 0.8em;
+    margin: 0 0.5em;
+  }
+
+  .user-account .dropdown-icon .open {
+    display: none;
+  }
+
+  .user-account {
+    position: Relative;
+  }
+
+  .balance-dropdown {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .balance-dropdown .dropdown-list {
+    box-shadow: var(--box-shadow-1);
+    background-color: var(--dropdown-bg-color);
+    border-radius: var(--border-radius-2);
+    max-height: calc(100vh - 9em);
+    overflow-y: auto;
+    top: 4em;
+    padding: 1em 0;
+    width: 18em;
+  }
+
+  .balance-dropdown .fc-wallet-balance-shop {
+    box-sizing: border-box;
+    background-color: var(--dropdown-bg-color);
+    font-size: 0.75em;
+    line-height: 1.6em;
+    max-height: unset !important;
+  }
+
+  .user-account-dropdown {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 2em;
+    right: 0;
+    z-index: 2;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .dropdown-header {
+    padding: 0.75em 1em 0.5em 1em;
+  }
+
+  .seperator {
+    width: 100%;
+    height: 2px;
+    flex: 0 0 auto;
+  }
+
+  .user-account-dropdown .dropdown-list {
+    pointer-events: all;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadow-1);
+    background-color: var(--dropdown-bg-color);
+    border-radius: var(--border-radius-2);
+    font-weight: 300;
+    font-size: 1em;
+    padding: 0.25em;
+    overflow: hidden;
+    width: 18em;
+    max-height: calc(100vh - 10.25em);
+    overflow-y: auto;
+  }
+
+  .user-account-dropdown .dropdown-item {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--font-1);
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1em;
+  }
+
+  .user-account-dropdown .dropdown-item i,
+  .user-account-dropdown .dropdown-item svg {
+    margin-right: 0.5em;
+    width: 1.5em;
+  }
+
+  .user-account-dropdown .dropdown-item:hover {
+    background-color: var(--hover-dark-blue);
+  }
+
+  .dropdown-open .user-account-dropdown {
+    display: flex;
+  }
+
+  .dropdown-open .tooltiptext {
+    display: none !important;
+  }
+
+  .user-avatar,
+  .user-avatar * {
+    pointer-events: none !important;
+  }
+
+  .user-account:hover .dropdown-icon .open {
+    display: block;
+  }
+
+  .user-account:hover .dropdown-icon .closed {
+    display: none;
+  }
+
+  .tooltip {
+    line-height: 1.2;
+  }
+
+  .tooltip .tooltiptext {
+    font-size: 0.625em;
+    width: 10em;
+    top: 140%;
+    left: 50%;
+    margin-left: -5.5em;
+  }
+
+  .tooltip.tooltip-top .tooltiptext {
+    top: auto;
+    bottom: 140%;
+  }
+
+  .tooltip.tooltip-top .tooltiptext::after {
+    content: ' ';
+    position: absolute;
+    bottom: unset;
+    top: 100%;
+
+    left: 50%;
+    margin-left: -0.4em;
+    border-width: 0.75em;
+    border-style: solid;
+    border-color: var(--dark-4) transparent transparent transparent;
+  }
+
+  .logged-in,
+  .not-logged-in {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em 1em 1em 0em;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+  }
+
+  .sign-up-button {
+    color: var(--pure-black);
+    font-weight: bold;
+    font-size: 1em;
+    background-color: transparent;
+    border: solid 2px var(--dark-2);
+    border-radius: 3px;
+    color: var(--pure-white);
+    margin: 0.25em 0.5em 0.4em 0;
+    padding: 0.4em 1.75em;
+    align-self: center;
+    flex: 0 0 auto;
+  }
+
+  .login-button {
+    cursor: pointer;
+    font-size: 1em;
+    align-self: center;
+
+    border-radius: 3px;
+    color: var(--pure-white);
+    background-color: var(--dark-2);
+    box-shadow: var(--box-shadow-3);
+    margin: 0.25em 0.5em 0.4em 0;
+    padding: 0.5em 1.75em;
+  }
+
+  .logo {
+    flex: 0 0 auto;
+    align-self: center;
+    cursor: pointer;
+    width: 12em;
+    display: flex;
+    padding-left: 0.25em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 2.5em;
+    width: auto;
+  }
+
+  .dropdown-item i,
+  .dropdown-item svg {
+    font-size: 1em;
+  }
+
+  app-zendesk-support-button {
+    position: relative;
+    bottom: unset;
+    right: unset;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 800px),
+    only screen and (max-height: 900px) and (max-width: 1000px),
+    only screen and (max-height: 480px) {
+    .more-dropdown {
+      font-size: 0.875em;
+    }
+
+    .user-account-dropdown {
+      position: fixed;
+      flex-direction: column;
+      top: calc(3.25em - 0.25em);
+      right: 0;
+      bottom: 5.25em;
+      z-index: 2;
+      pointer-events: none;
+      z-index: 2;
+      font-size: 1em;
+    }
+
+    .user-account-dropdown .dropdown-item,
+    .fc-theme-controller {
+      font-size: 1.125em !important;
+    }
+
+    .user-account-dropdown .dropdown-list {
+      top: 1.5em;
+    }
+
+    .middle-side {
+      flex: 0 0 auto;
+      min-width: 0;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .search-input-wrapper {
+      padding: 0;
+      margin: 0;
+    }
+
+    .logo {
+      padding-left: 0.25em;
+      width: auto;
+    }
+  }
+
+  .bottom-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--dark-5);
+    padding: 1em 0 1.5em 0;
+  }
+
+  .bottom-menu-icon-size {
+    font-size: 1.7em !important;
+  }
+
+  @media only screen and (max-width: 435px) {
+    .nav-content-wrapper.not-logged-in .btn.margin-right-2 {
+      margin: 0;
+      padding: 0.25em 0.9em;
+    }
+  }
+
+  .zendesk-item {
+    display: none !important;
+  }
+
+  @media only screen and (max-width: 1430px) {
+    .zendesk-item {
+      display: flex !important;
+      padding: 0 !important;
+    }
+  }
+}

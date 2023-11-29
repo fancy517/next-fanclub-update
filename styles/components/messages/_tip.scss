@@ -1,0 +1,19 @@
+.fc-tip {
+  cursor: default;
+
+  .tip-wrapper {
+    color: var(--dark-blue-1);
+    font-size: 0.75em;
+    padding: 0.2em 1em;
+    font-weight: bold;
+  }
+
+  .gift-icon {
+    font-size: 3em;
+    color: var(--green-1);
+  }
+
+  .fc-account-username {
+    display: inline-block;
+  }
+}

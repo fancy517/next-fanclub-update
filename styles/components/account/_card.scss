@@ -1,0 +1,128 @@
+.fc-account-card {
+  position: absolute;
+  background-color: var(--pure-white);
+  box-shadow: var(--box-shadow-1);
+  border: solid 1px var(--border-color);
+  border: 0;
+  background-color: var(--dark-6);
+  border-radius: var(--border-radius-2);
+  z-index: 4;
+  padding: 3em 1.5em 1em 1.5em;
+  width: 22em;
+  font-size: 0.9em;
+  box-sizing: border-box;
+  pointer-events: all;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .about-text {
+    font-size: 0.75em;
+    color: var(--dark-blue-1);
+    margin-top: 0.5em;
+    max-width: 100%;
+    word-break: break-word;
+    overflow: hidden;
+  }
+
+  .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5em;
+    border-top-right-radius: var(--border-radius-2);
+    border-top-left-radius: var(--border-radius-2);
+    overflow: hidden;
+  }
+
+  .banner-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .background-gradient {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(26, 30, 38, 0) -21%,
+      var(--dark-1) 110%
+    );
+  }
+
+  .avatar {
+    margin-bottom: 0.5em;
+    width: 3.75em;
+    height: 3.75em;
+  }
+
+  .user-name {
+    font-weight: bold;
+  }
+
+  .hover-visible {
+    display: none;
+  }
+
+  .fllow-button {
+    align-self: flex-start;
+    margin-top: 0.9em;
+    flex: 0 0 auto;
+    z-index: 3;
+    transition: background-color 100ms linear;
+  }
+
+  .fllow-button:hover .hover-visible {
+    display: flex;
+  }
+
+  .fllow-button:hover .hover-hidden {
+    display: none;
+  }
+
+  .following-button:hover {
+    transition: background-color 100ms linear;
+    background-color: var(--red-1) !important;
+    border: 2px solid var(--red-1) !important;
+  }
+
+  .creator-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1em;
+    padding: 0 0em;
+  }
+
+  .creator-stats.flex-start {
+    justify-content: flex-start;
+  }
+
+  .creator-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+  }
+
+  .creator-stat-value {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+    line-height: 1.67em;
+    color: var(--font-1);
+  }
+
+  .creator-stat-title {
+    text-align: center;
+    font-size: 0.75em;
+    line-height: 1.67em;
+    color: var(--dark-blue-1);
+  }
+}

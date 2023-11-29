@@ -1,0 +1,193 @@
+.fc-settings-payments-route {
+  .collapse-section {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+    max-width: 70em;
+    width: 100%;
+    align-self: center;
+  }
+
+  .section-header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-size: 1.25em;
+    color: var(--font-1);
+    padding: 0 0 0.5em 0;
+  }
+
+  .background-icon {
+    position: absolute;
+    font-size: 5.5em;
+  }
+
+  .relative {
+    position: relative;
+    background-color: var(--dark-1);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .overlay-container {
+    position: absolute;
+    left: calc(50% + 0.95em);
+    top: calc(50% + 0.4em);
+    background-color: var(--dark-1);
+    border-radius: 1.125em;
+    width: 2.25em;
+    height: 2.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-collapser {
+    position: absolute;
+    color: var(--pure-white);
+    cursor: pointer;
+  }
+
+  .section-title {
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .section-content {
+    flex: 0 0 auto;
+    padding: 1em 0 1em 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .section-colum {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  input[type='text'],
+  input[type='password'] {
+    max-width: 20em;
+    width: 100%;
+  }
+
+  .default-payment {
+    width: 100%;
+    border: solid 1px var(--border-color);
+    border-radius: var(--border-radius-2);
+    padding: 1em;
+    margin: 1em 1em 0.5em 1em;
+    height: 5em;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .payment-methods {
+    flex-wrap: wrap;
+  }
+
+  .payment-methods > .flex-col {
+    flex: 0 0 33%;
+  }
+
+  .add-payment {
+    background-color: var(--dark-1);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color 100ms;
+    color: var(--dark-blue-1);
+  }
+
+  .add-payment:hover {
+    color: #4da3db;
+    transition: color 100ms;
+  }
+
+  .input-container {
+    width: 50%;
+    margin: 0.5em 1em;
+    box-sizing: border-box;
+  }
+
+  .input-content {
+    display: flex;
+  }
+
+  .input-content input {
+    flex: 1;
+  }
+
+  .input-title {
+    font-size: 0.875em;
+    margin: 0.5em 0;
+    color: var(--font-1);
+  }
+
+  .banking-wrapper {
+    width: 100%;
+  }
+
+  .dropdown-title {
+    border-radius: 0.25em;
+    width: 13.5em;
+    padding: 0.5em 1em;
+    font-weight: normal;
+  }
+
+  .dropdown-item {
+    width: 13.5em;
+  }
+
+  .table-container > div {
+    box-sizing: border-box;
+  }
+
+  .seperator {
+    width: 100%;
+    height: 1px;
+    margin: 1.25em 0 1.25em 0;
+    margin-left: -1em;
+  }
+
+  .seperator.no-margin-top {
+    margin-top: 0;
+    margin-left: -1em;
+  }
+
+  .transaction-history-wrapper {
+    border-radius: var(--border-radius-2);
+    overflow: hidden;
+  }
+
+  .transaction-history {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 0.25em;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  @media only screen and (max-width: 800px),
+    only screen and (max-height: 900px) and (max-width: 1000px),
+    only screen and (max-height: 480px) {
+    .input-container {
+      width: 100%;
+      margin: 0;
+    }
+
+    input {
+      max-width: 100% !important;
+    }
+  }
+}

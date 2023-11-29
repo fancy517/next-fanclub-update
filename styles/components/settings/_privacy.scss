@@ -1,0 +1,150 @@
+.fc-settings-privacy-route {
+  .blocked-regions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0.5em 0;
+    padding: 0.5em 1.2em 0.5em 1.2em;
+  }
+
+  .blocked-region {
+    margin: 0.1em 0.35em;
+    padding: 0.7em 0.55em;
+    border-radius: 0.5em;
+    color: var(--pure-inversed);
+    background-color: var(--dark-3) !important;
+    line-height: 1;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .toggle-settings {
+    width: 15em;
+    max-width: 100%;
+  }
+
+  .toggle-settings.wide {
+    width: 22em;
+  }
+
+  .material-input {
+    width: 30em;
+    max-width: 100%;
+  }
+
+  input::placeholder {
+    background-color: var(--input-bg) !important;
+  }
+
+  .multi-toggle-container {
+    position: relative;
+    padding-bottom: 2.75em;
+  }
+
+  .multi-toggle-container .option {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background-color: var(--dark-blue-1);
+    transition:
+      scale linear 100ms,
+      background-color linear 100ms;
+    cursor: pointer;
+  }
+
+  .multi-toggle-container .option:hover {
+    transform: scale(1.1);
+    transition:
+      scale linear 100ms,
+      background-color linear 100ms;
+    background-color: var(--blue-1);
+  }
+
+  .multi-toggle-container .label {
+    position: absolute;
+    top: 1.75em;
+    font-weight: bold;
+  }
+
+  .multi-toggle-container .connector {
+    height: 5px;
+    background-color: var(--dark-blue-1);
+    width: 4.65em;
+    transition: background-color linear 100ms;
+  }
+
+  .multi-toggle-container .selected-mode.connector {
+    background-color: var(--blue-1);
+    transition: background-color linear 100ms;
+  }
+
+  .multi-toggle-container .selected-mode .option {
+    background-color: var(--blue-1);
+    transition: background-color linear 100ms;
+  }
+
+  .blur-preview {
+    max-width: 100%;
+    width: 20em;
+    height: 10em;
+    position: relative;
+    background-color: var(--dark-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+  }
+
+  .blur-preview img {
+    width: 95%;
+    height: auto;
+  }
+
+  .blur-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    border-radius: 0.5em;
+  }
+
+  .blur-overlay {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+
+  .blur-overlay.blur-mode-1 {
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+  }
+
+  .blur-overlay.blur-mode-2 {
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+  }
+
+  .blur-overlay.blur-mode-3 {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+  }
+
+  @-moz-document url-prefix() {
+    .firefox-blur-1 {
+      filter: blur(6px);
+    }
+
+    .firefox-blur-2 {
+      filter: blur(12px);
+    }
+
+    .firefox-blur-3 {
+      filter: blur(20px);
+    }
+  }
+}

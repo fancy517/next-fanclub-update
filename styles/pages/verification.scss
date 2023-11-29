@@ -1,0 +1,45 @@
+.fc-verification-page {
+  display: block !important;
+  margin: auto !important;
+
+  .email-sending-part {
+    text-align: center;
+    font-size: 22px;
+    line-height: 40px;
+    span {
+      margin-left: 15px;
+      color: #2699f7;
+    }
+  }
+  .verification-input-part {
+    display: flex;
+    margin-top: 20px;
+    input {
+      width: 300px !important;
+      height: 50px;
+      border: 2px solid #2699f7;
+      border-radius: 10px;
+      padding: 0 20px;
+      margin: auto 10px auto auto;
+      font-size: 32px;
+      color: white;
+    }
+    .fc-button {
+      font-size: 18px;
+      margin: auto auto auto 10px;
+    }
+  }
+}
+
+.verification-container {
+  display: block !important;
+  margin: auto;
+  .verification-content {
+    width: fit-content;
+    margin: auto;
+    text-align: center !important;
+  }
+  .verification-button {
+    width: fit-content;
+  }
+}

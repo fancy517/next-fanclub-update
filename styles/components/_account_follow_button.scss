@@ -1,0 +1,13 @@
+.fc-account-follow-button {
+  .hover-wrapper:hover .btn.solid-blue {
+    display: none;
+  }
+
+  .hover-wrapper .btn.solid-red {
+    display: none;
+  }
+
+  .hover-wrapper:hover .btn.solid-red {
+    display: block;
+  }
+}

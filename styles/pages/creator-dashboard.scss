@@ -1,0 +1,287 @@
+#m_creator-dashboard_route {
+  .page-content {
+    padding: 0.5em 0.5em 0em 0.5em;
+    margin: 0 1em 0 1em;
+    box-sizing: border-box;
+  }
+
+  .tab-nav-items {
+    position: relative;
+  }
+
+  .tab-nav-item i,
+  .tab-nav-item svg {
+    margin-right: 0.3em;
+  }
+
+  .tab-nav-item {
+    width: auto !important;
+    padding: 0.5em 0.75em;
+  }
+
+  .settings-content-wrapper {
+    box-sizing: border-box;
+  }
+
+  .collapse-section {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+    max-width: 70em;
+    width: 100%;
+    align-self: center;
+  }
+
+  .section-header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-size: 1.25em;
+    color: #54627e;
+    padding: 0 0 0.5em 0;
+    border-bottom: 1px solid #303644;
+  }
+
+  .section-collapser {
+    position: absolute;
+    color: var(--pure-white);
+    cursor: pointer;
+  }
+
+  .section-title {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .section-content {
+    flex: 0 0 auto;
+    padding: 1em 0 1em 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .section-colum {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  & > .title {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 1.25em 0;
+  }
+
+  .hide-searchengine,
+  .hide-age {
+    margin: 0.5em 0;
+  }
+
+  .hide-searchengine label,
+  .hide-age label {
+    color: #939699;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.875em;
+  }
+
+  .hide-searchengine label i,
+  .hide-age label i,
+  .hide-searchengine label svg,
+  .hide-age label svg {
+    margin-left: 0.5em;
+    color: #303644;
+    cursor: pointer;
+  }
+
+  .hide-searchengine label input,
+  .hide-age label input {
+    margin-right: 0.5em;
+  }
+
+  .checkboxes label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1.5em 0 0;
+    font-weight: 300;
+    font-size: 0.875em;
+  }
+
+  .checkboxes label input {
+    margin-right: 0.5em;
+  }
+
+  .radios {
+    justify-content: center;
+    margin: 1em 0 0 0;
+  }
+
+  .radios label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1.5em 0 0;
+    font-weight: 300;
+    font-size: 0.875em;
+  }
+
+  .radios label input {
+    margin-right: 0.5em;
+  }
+
+  .tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .tags .tag {
+    margin: 0.5em;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--dark-3);
+    padding: 0.2em 0.5em;
+    align-items: center;
+    border-radius: var(--border-radius-2);
+  }
+
+  .tags .tag .remove-tag {
+    font-size: 0.75em;
+    margin-right: 0.5em;
+    cursor: pointer;
+  }
+
+  .tags .tag .remove-tag:hover {
+    color: #4da3db;
+  }
+
+  .tags .tag .tag-text {
+    font-size: 0.75em;
+  }
+
+  .current-title {
+    font-weight: 300;
+    margin: 1em 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.875em;
+  }
+
+  .user-name {
+    margin-left: 0.5em;
+  }
+
+  .input-label {
+    font-size: 0.875em;
+    font-weight: 300;
+    margin: 0.75em 0;
+  }
+
+  .change-button {
+    margin-left: 2em;
+  }
+
+  .checkboxes-col {
+    font-size: 0.875em;
+    color: #939699;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  .settings-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .settings-item {
+    flex: 0 0 auto;
+    padding: 0.7em 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 680px) {
+    .page-content .tab-nav-wrapper {
+      font-size: 0.875em;
+    }
+
+    .page-content .settings-content-wrapper {
+      font-size: 0.875em;
+    }
+  }
+
+  .show-1,
+  .show-2,
+  .show-3,
+  .show-4,
+  .show-5,
+  .show-6,
+  .show-7,
+  .show-8 {
+    display: none;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .show-1 {
+      display: block;
+    }
+
+    .hide-1 {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 885px) {
+    .show-2 {
+      display: block;
+    }
+
+    .hide-2 {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 725px) {
+    .show-3 {
+      display: block;
+    }
+
+    .hide-3 {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 560px) {
+    .show-4 {
+      display: block;
+    }
+
+    .hide-4 {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 465px) {
+    .show-5 {
+      display: block;
+    }
+
+    .hide-5 {
+      display: none;
+    }
+  }
+}

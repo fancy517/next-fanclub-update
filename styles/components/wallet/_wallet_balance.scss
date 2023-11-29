@@ -1,0 +1,63 @@
+.fc-wallet-balance {
+  flex: 0 0 auto;
+}
+
+.fc-wallet-balance {
+  .balance-component {
+    flex: 0 0 auto;
+    padding: 0 0.5em 0 0.75em;
+    display: flex;
+    flex-direction: row;
+    height: 2.25em;
+    border-radius: 1.125em;
+    overflow: hidden;
+    background-color: var(--dark-3);
+    align-items: center;
+    border: 2px solid var(--dark-blue-1-outline);
+    margin: 0 1em;
+    color: var(--font-tint-2);
+  }
+
+  .balance-amount {
+    flex: 1;
+    display: flex;
+    min-width: 4em;
+    padding-top: 1px;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.875em;
+    vertical-align: middle;
+    margin-right: 0.5em;
+
+    i,
+    svg {
+      margin-right: 0.8em;
+      font-size: 0.8em;
+    }
+  }
+
+  .add-balance {
+    flex: 0 0 auto;
+    padding: 0.1em 0em 0.1em 0em;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    i,
+    svg {
+      font-size: 1em;
+      margin-left: 0.3em;
+    }
+  }
+
+  .tooltip {
+    display: inline-flex;
+  }
+
+  .tooltiptext {
+    font-size: 14px;
+    top: 26px;
+  }
+}

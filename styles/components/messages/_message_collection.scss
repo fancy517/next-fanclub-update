@@ -1,0 +1,38 @@
+.fc-group-message-collection {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row !important;
+
+  .my-message {
+    align-self: flex-end;
+    justify-content: flex-end;
+  }
+
+  .message.my-message {
+    align-self: flex-end;
+  }
+
+  .timestamp {
+    margin: 0.1em 0 0 1em;
+    font-size: 0.75em;
+    color: var(--dark-blue-1);
+  }
+
+  .reply-target {
+    background-color: var(--blue-1-alpha-2);
+  }
+
+  .timestamp.my-message {
+    align-self: flex-end;
+    margin: 0.1em 1em 0 0;
+  }
+
+  > div .avatar.fc-account-avatar {
+    flex: 0 0 auto;
+    width: 2.5em;
+    height: 2.5em;
+    margin-left: 1em;
+    margin-bottom: 0.9em;
+    align-self: flex-end;
+  }
+}

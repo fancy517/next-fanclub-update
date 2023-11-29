@@ -1,0 +1,61 @@
+.fc-settings-text-input {
+  input[type='text'],
+  input[type='password'] {
+    width: 100%;
+    max-width: 20em;
+  }
+
+  .input-label {
+    font-size: 1em;
+    font-weight: 300;
+    margin: 0.1em 0 0.25em 0;
+    font-weight: bold;
+  }
+
+  .change-button {
+    margin-left: 2em;
+  }
+
+  .change-button.disabled {
+    cursor: not-allowed;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  .btn {
+    align-self: flex-start;
+  }
+
+  .change-password {
+    font-size: 0.9em;
+    padding: 0.6em 2.5em;
+    text-align: center;
+    flex: 0 0 auto;
+    align-self: flex-start;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--dark-3);
+    border: 2px solid var(--dark-blue-1-outline);
+  }
+
+  .small {
+    display: none;
+  }
+
+  @media only screen and (max-width: 680px) {
+    .small {
+      display: flex;
+    }
+
+    .default {
+      display: none;
+    }
+
+    .change-button {
+      margin-left: 0.5em;
+      padding: 0.4em 1em;
+    }
+  }
+}

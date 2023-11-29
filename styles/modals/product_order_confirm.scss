@@ -1,0 +1,92 @@
+.fc-product-order-confirm-modal {
+  pointer-events: none;
+  z-index: 1;
+  border-radius: 0.25em;
+  max-width: 100%;
+  max-height: 90%;
+  width: 25em;
+  max-width: 25em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .seperator {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .modal {
+    pointer-events: all;
+    flex: 0 0 auto;
+    width: 100%;
+    overflow: visible !important;
+    max-height: 50em;
+    border-radius: var(--border-radius-2);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .modal-header {
+    text-align: center;
+    padding: 0em 0em 0.5em 0em;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    color: var(--font-1);
+  }
+
+  .modal-header .title {
+    flex: 1;
+    text-align: left;
+  }
+
+  .modal-header .actions {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .modal-content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0em;
+    flex: 1;
+  }
+
+  .modal-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em 0 0em 0;
+    justify-content: flex-end;
+  }
+
+  .modal-footer .btn {
+    font-size: 0.875em;
+  }
+
+  .processing {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 2;
+  }
+
+  .fc-payment-method-select .dropdown-list {
+    overflow-y: auto;
+    max-height: 12em;
+  }
+}

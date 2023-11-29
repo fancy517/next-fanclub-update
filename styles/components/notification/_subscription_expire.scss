@@ -1,0 +1,36 @@
+.fc-subscription-expire-notification {
+  display: flex;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+
+  .fc-post,
+  .fc-account-media {
+    margin-top: 1em;
+    margin-left: 3em;
+    width: 100%;
+    max-width: 25em;
+    height: 15em;
+    border-radius: 0.25em;
+    overflow: hidden;
+  }
+
+  .notification-type {
+    font-size: 2em;
+    margin-right: 0.5em;
+  }
+
+  .notification-content {
+    align-items: center;
+    font-size: 1em;
+  }
+
+  .notification-content .notification-timestamp i {
+    margin: 0 0.3em;
+  }
+
+  .user-name {
+    display: inline-block;
+    flex: 0 0 auto;
+  }
+}

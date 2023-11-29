@@ -1,0 +1,48 @@
+.fc-balance-input {
+  .material-input {
+    margin-top: 5px;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .price-input {
+    padding-right: 2.75em !important;
+  }
+
+  .input-group input {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+    font-size: 1em;
+  }
+
+  .input-addon {
+    border-top-left-radius: var(--border-radius-2);
+    border-bottom-left-radius: var(--border-radius-2);
+  }
+
+  input.read-only {
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .transparent input {
+    padding: 0;
+    background-color: transparent;
+    color: var(--pure-inversed);
+    margin: 0;
+    width: 4em;
+    font-size: 1em;
+    line-height: 1;
+    border-radius: none;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+}

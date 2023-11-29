@@ -1,0 +1,11 @@
+.fc-list-item {
+  .follower {
+    padding: 8px;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .fc-account-avatar {
+    width: 48px;
+    height: 48px;
+  }
+}

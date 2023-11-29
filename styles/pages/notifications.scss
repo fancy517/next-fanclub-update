@@ -1,0 +1,392 @@
+#m_notification_route {
+  .spacer {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-title {
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .notification .feed-item-preview {
+    height: 20em;
+  }
+
+  .dropdown .dropdown-list {
+    padding: 0;
+    border-radius: var(--border-radius-2);
+    overflow: hidden;
+    bottom: auto;
+    left: auto;
+    top: 2.35em;
+    right: 0em;
+    box-shadow: var(--box-shadow-1);
+  }
+
+  .xd-checkbox {
+    margin-bottom: 0.2em;
+  }
+
+  .dropdown-item {
+    background-color: var(--dropdown-bg-color);
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--font-1);
+    width: 15em;
+  }
+
+  .dropdown-item:hover {
+    color: var(--pure-inversed);
+    background-color: var(--dropdown-bg-color-hover);
+  }
+
+  .checkbox {
+    box-sizing: border-box;
+    width: 1em;
+    height: 1em;
+    border: 0.11em solid var(--dark-blue-1);
+    border-radius: 0.2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5em;
+  }
+
+  .checkbox.selected {
+    border-color: var(--blue-1);
+  }
+
+  .checkbox.selected .checkbox-fill {
+    display: flex;
+    width: 65%;
+    background-color: var(--blue-1);
+    height: 65%;
+    border-radius: 0.1em;
+  }
+
+  .checkbox i {
+    color: var(--blue-1);
+    font-size: 0.75em;
+    line-height: 1em;
+    margin: 0;
+  }
+
+  .timeline-spacer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 8em 0 8em 0;
+  }
+
+  .timeline-spacer i {
+    font-size: 2em;
+  }
+
+  .page-content {
+    padding: 0 0 0 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 30em;
+    max-height: 100%;
+    margin: 0 1em 0 1em;
+    box-sizing: border-box;
+  }
+
+  .page-header {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+
+  .notifications-list-wrapper {
+    flex: 1;
+    display: flex;
+    font-size: 0.9em;
+    flex-direction: column;
+  }
+
+  .notification {
+    width: 100%;
+  }
+
+  .notifications-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .notification > div:first-child {
+    flex: 0 0 auto;
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+    padding: 1em 1.5em;
+    cursor: pointer;
+    align-items: center;
+    color: var(--dark-blue-1);
+    overflow: hidden;
+    border-radius: 0.25em;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .notification:hover {
+    transition-property: background-color;
+    transition-duration: 50ms;
+    transition-timing-function: ease-in;
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 50ms;
+    -webkit-transition-timing-function: ease-in;
+    background-color: var(--dark-7) 11;
+  }
+
+  .tab-nav-items {
+    width: 100%;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .tab-nav-item {
+    width: auto;
+    flex: 1;
+    font-size: 0.875em;
+    display: flex;
+    padding: 0.5em 0.5em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .notification .notification-avatar {
+    flex: 0 0 auto;
+    margin-right: 0.5em;
+  }
+
+  .notification .notification-avatar > .avatar {
+    width: 2.18em;
+    height: 2.18em;
+  }
+
+  .notification .notification-user {
+    margin: 0 0.1em 0 0;
+    justify-self: flex-start;
+  }
+
+  .notification .notification-user > .notification-user > .user-name {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: var(--dark-blue-1);
+  }
+
+  .notification .notification:hover > .notification-user > .user-name {
+    color: var(--font-1);
+  }
+
+  .notification .notification:hover .notification-content {
+    transition-property: color;
+    transition-duration: 50ms;
+    transition-timing-function: ease-in;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: 50ms;
+    -webkit-transition-timing-function: ease-in;
+  }
+
+  .notification .notification-timestamp {
+    flex: 0 0 auto;
+    color: var(--dark-blue-1);
+    font-weight: 300;
+    font-size: 1em;
+    margin: 0 1em 0 0.5em;
+    align-self: flex-start;
+  }
+
+  .notification .flex-col-mobile {
+    flex: 1;
+  }
+
+  .notification .time-dot {
+    font-size: 0.3em;
+    vertical-align: middle;
+    margin-right: 0.5em;
+  }
+
+  .notification .notification-actions {
+    color: var(--dark-blue-1);
+    font-size: 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .notification .notification-actions > i {
+    margin: 0 0.2em;
+  }
+
+  .notifications-load-more {
+    display: Flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: var(--dark-6);
+    padding: 2em 1em;
+  }
+
+  .notification .notification-actions .dropdown-list-wrapper {
+    margin-top: 1.5em;
+    background-color: var(--dropdown-bg-color);
+    border-radius: var(--border-radius-2);
+    overflow: hidden;
+  }
+
+  .notification .fc-account-media,
+  .notification .fc-account-media-bundle-gallery,
+  .notifcation .fc-account-media-bundle {
+    margin-top: 0;
+  }
+
+  .notification .notification-actions .dropdown-list {
+    right: 0;
+    color: var(--dark-blue-1);
+    top: 0;
+    padding-top: 0;
+    color: var(--dark-blue-1);
+    overflow: hidden;
+    width: auto;
+    font-size: 1.75em;
+    border-radius: var(--border-radius-2);
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .notification .notification-actions:active .dropdown-list {
+    display: flex;
+  }
+
+  .notification .notification-actions .dropdown-list:hover {
+    display: flex;
+  }
+
+  .notification .notification-actions .dropdown-item {
+    background-color: var(--dropdown-bg-color);
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    width: 12em;
+  }
+
+  .notification .notification-actions .dropdown-item:hover {
+    background-color: var(--dropdown-bg-color-hover);
+  }
+
+  .notification .notification-actions .dropdown-item i {
+    margin-right: 0.75em;
+  }
+
+  .notification .notification-actions .dropdown-item:hover {
+    color: var(--pure-inversed);
+    background-color: var(--dropdown-bg-color-hover);
+  }
+
+  .badge {
+    background-color: var(--blue-2);
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    color: var(--pure-white);
+    font-weight: bold;
+    letter-spacing: 0;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-left: 0.5em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .badge.absolute {
+    position: absolute;
+    top: 1em;
+    right: 0.5em;
+  }
+
+  .badge span {
+    font-size: 12px;
+    line-height: 16px;
+    vertical-align: middle;
+    letter-spacing: 0;
+  }
+
+  .new-notifications {
+    text-align: center;
+    border-bottom: 1px solid transparent;
+    padding: 1em;
+    cursor: pointer;
+  }
+
+  .new-notifications:hover {
+    transition-property: background-color;
+    transition-duration: 50ms;
+    transition-timing-function: ease-in;
+    -webkit-transition-property: background-color;
+    -webkit-transition-duration: 50ms;
+    -webkit-transition-timing-function: ease-in;
+    background-color: var(--dark-7) 11;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .notification .avatar {
+      display: none !important;
+    }
+
+    .notification .notification-type {
+      margin-right: 0;
+    }
+
+    .notification .user-name {
+      margin-left: 0;
+    }
+  }
+
+  @media only screen and (max-width: 800px),
+    only screen and (max-height: 900px) and (max-width: 1000px),
+    only screen and (max-height: 480px) {
+    .notification > div:first-child {
+      flex: 0 0 auto;
+      position: relative;
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      cursor: pointer;
+      align-items: center;
+      padding: 0.75em 0.5em;
+      cursor: pointer;
+      align-items: center;
+      color: var(--dark-blue-1);
+      overflow: hidden;
+      border-radius: 0.25em;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .notification .notification-content {
+      flex: 1;
+    }
+  }
+}

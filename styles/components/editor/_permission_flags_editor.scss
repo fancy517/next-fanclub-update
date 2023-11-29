@@ -1,0 +1,44 @@
+.fc-permission-flags-editor {
+  margin-bottom: 1em;
+  font-size: 12px !important;
+
+  .form-look {
+    padding: 0.6em 1.2em 0.6em 1.2em;
+    flex-wrap: wrap;
+  }
+
+  .permission-flag {
+    margin: 0.1em 0.35em;
+    padding: 0.7em 0.55em;
+    border-radius: 0.6em;
+    color: var(--pure-inversed);
+    background-color: var(--dark-3) !important;
+    line-height: 1;
+    flex: 0 0 auto;
+    animation: dropdown 300ms;
+    transform-origin: center;
+  }
+
+  .new-row {
+    animation: dropdown 300ms;
+    transform-origin: center;
+  }
+
+  .permission-flag i {
+    line-height: 1;
+  }
+
+  .new-flag {
+    position: relative;
+    animation: none;
+    color: var(--dark-blue-1);
+  }
+
+  .new-flag:hover {
+    color: var(--blue-1);
+  }
+
+  .new-flag .dropdown-list .dropdown-item {
+    font-size: 1em;
+  }
+}

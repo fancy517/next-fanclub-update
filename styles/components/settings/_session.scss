@@ -1,0 +1,60 @@
+.fc-session-management-route {
+  .session {
+    border: 1px solid var(--border-color);
+    margin-bottom: 1em;
+    padding: 0.5em 0.75em !important;
+    border-radius: var(--border-radius-2);
+  }
+
+  .session.active-session {
+    border-color: var(--blue-1);
+  }
+
+  .session-title {
+    color: var(--dark-blue-1);
+    flex: 1;
+  }
+
+  .session-value {
+    flex: 0 0 auto;
+  }
+
+  .dropdown-list {
+    bottom: auto;
+    left: auto;
+    top: 2.5em;
+    right: 2em;
+    padding: 0 !important;
+    border-radius: var(--border-radius-2);
+    overflow: hidden;
+  }
+
+  .dropdown-item {
+    width: auto;
+    background-color: var(--dropdown-bg-color);
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    color: var(--font-1);
+  }
+
+  .dropdown-item.selected {
+    color: var(--blue-1);
+  }
+
+  .dropdown-item:hover {
+    color: var(--pure-inversed);
+    background-color: var(--dropdown-bg-color-hover);
+  }
+
+  .nav-dropdown {
+    position: relative;
+  }
+
+  .tab-nav-item {
+    width: auto !important;
+    padding: 0.5em 0.75em;
+  }
+}

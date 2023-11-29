@@ -1,0 +1,51 @@
+.fc-report-content-modal {
+  pointer-events: all;
+  z-index: 1;
+  background-color: var(--modal-bg);
+  box-shadow: 0 1em 2.5em rgba(0, 0, 0, 0.3);
+  padding: 1em 1em 1em 1em;
+  border-radius: 0.125em;
+  width: 24em;
+  display: flex;
+  flex-direction: column;
+
+  .modal-header {
+    display: flex;
+    flex: 0 0 auto;
+    color: var(--font-1);
+    font-weight: bold;
+    padding-bottom: 0.5em;
+  }
+
+  .modal-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    color: var(--dark-blue-1);
+  }
+
+  .title {
+    color: var(--font-1);
+    font-weight: bold;
+    margin-top: 2em;
+  }
+
+  .modal-footer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+    align-items: center;
+  }
+
+  .confirm-btn {
+    font-size: 0.875em;
+    margin-left: 0.5em;
+  }
+
+  .xd-radio {
+    font-size: 0.875em;
+    margin: 0.4em 0;
+    max-width: 100%;
+  }
+}

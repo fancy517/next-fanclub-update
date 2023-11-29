@@ -1,0 +1,60 @@
+.fc-group-message-container {
+  .message-content-list {
+    flex: 1;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    position: relative;
+  }
+
+  .message-collection-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .message-collection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0.75em 0em;
+  }
+
+  .partner-is-typing {
+    margin: 0em 0.25em 1em 0.75em;
+    align-items: center;
+    line-height: 1em;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    height: 0;
+    overflow: visible;
+    z-index: 2;
+  }
+
+  .partner-is-typing .fc-account-username {
+    min-height: 0;
+  }
+
+  .partner-is-typing i {
+    font-size: 0.75em;
+    margin: 0 0.3em;
+  }
+
+  .partner-is-typing i.fas.fa-circle {
+    font-size: 0.5em;
+  }
+
+  .typing-avatar {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .fc-group-message-input {
+    flex: 0 0 auto;
+  }
+}

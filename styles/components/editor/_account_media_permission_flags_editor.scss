@@ -1,0 +1,58 @@
+.fc-account-media-permission-flags-editor {
+  margin-bottom: 1em;
+
+  .form-look {
+    padding: 0.6em 1.2em 0.6em 1.2em;
+    flex-wrap: wrap;
+  }
+
+  .permission-flag {
+    margin: 0.1em 0.35em;
+    padding: 0.7em 0.55em;
+    border-radius: 0.5em;
+    color: var(--pure-inversed);
+    background-color: var(--dark-3) !important;
+    line-height: 1;
+    flex: 0 0 auto;
+    transition: left 300ms ease-out;
+    animation: dropdown 300ms;
+  }
+
+  .permission-flag i {
+    line-height: 1;
+  }
+
+  .new-permission {
+    animation: none;
+  }
+
+  .new-flag {
+    position: relative;
+    color: var(--dark-blue-1);
+  }
+
+  .new-flag:hover {
+    color: var(--blue-1);
+  }
+
+  .new-flag .dropdown-list {
+    box-shadow: var(--box-shadow-1);
+    background-color: var(--dropdown-bg-color);
+    border-radius: var(--border-radius-2);
+    padding: 0;
+    color: var(--font-1);
+    top: 2.25em;
+    overflow: hidden;
+  }
+
+  .new-flag .dropdown-list .dropdown-item {
+    color: var(--font-1);
+    font-size: 1em;
+  }
+
+  .dropdown-list.bottom {
+    top: 2em;
+    max-height: 13em;
+    overflow-y: auto;
+  }
+}

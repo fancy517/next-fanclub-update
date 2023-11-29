@@ -1,0 +1,24 @@
+#m_explore_route {
+  display: flex;
+  flex-direction: column;
+
+  .explore-content-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .tab-nav-items {
+    margin: 0;
+    flex-wrap: nowrap;
+  }
+
+  .page-content.for-you-route {
+    padding: 0 !important;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .tab-nav-items {
+      width: 100%;
+    }
+  }
+}

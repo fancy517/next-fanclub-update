@@ -1,0 +1,263 @@
+.fc-creator-dashboard-subscribers-route {
+  .tab-nav-items {
+    width: 100%;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .tab-nav-item {
+    width: auto;
+    flex: 1;
+    font-size: 0.875em;
+    display: flex;
+    padding: 0.5em 0.5em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    font-size: 1.25em;
+    color: #54627e;
+    padding: 0 0 0.5em 0;
+  }
+
+  .section-collapser {
+    position: absolute;
+    color: var(--pure-white);
+    cursor: pointer;
+  }
+
+  .section-title {
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+    color: var(--font-1);
+  }
+
+  .section-content {
+    flex: 0 0 auto;
+    padding: 1em 0 1em 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .transaction-history-wrapper {
+    border-radius: var(--border-radius-2);
+    overflow: hidden;
+  }
+
+  .transaction-history {
+    width: 100%;
+    padding: 0;
+    max-height: 29.5em;
+    overflow-y: auto;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .sub-settings {
+    position: absolute;
+    top: -1.5em;
+    z-index: 2;
+    right: 0.5em;
+  }
+
+  .dropdown-list {
+    font-size: 0.875em;
+    top: 0.5em;
+  }
+
+  .table-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.75em;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0;
+    border-top: 1px solid rgba(145, 164, 206, 0.16);
+    color: var(--dark-blue-1);
+  }
+
+  .table-nav .nav-item {
+    margin: 0 1em;
+    padding: 0.4em 0.55em 0.34em 0.55em;
+    border-radius: 0.25em;
+    line-height: 1em;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .table-nav .nav-item.selected {
+    margin: 0 1.25em;
+    line-height: 1em;
+    cursor: default;
+    border: 1px solid var(--dark-blue-1);
+  }
+
+  .table-nav .nav-item.disabled {
+    margin: 0 1.25em;
+    line-height: 1em;
+    cursor: default;
+  }
+
+  table {
+    font-size: 0.875em;
+    border: none;
+    box-shadow: var(--box-shadow-3);
+    background-color: var(--dark-6);
+  }
+
+  td {
+    text-align: center;
+    color: var(--dark-blue-1);
+    padding: 1.5em 0.5em;
+    font-size: 0.875em;
+  }
+
+  tr {
+    box-shadow: var(--box-shadow-3);
+  }
+
+  tr:nth-child(even) {
+    background-color: var(--dark-3);
+  }
+
+  th {
+    padding: 1.5em 0.5em;
+    color: var(--font-1);
+  }
+
+  .gem-purchase-options {
+    height: 29.5em;
+    max-height: 29.5em;
+    align-self: flex-start;
+  }
+
+  .gem-purchase-option {
+    align-items: center;
+    background-color: var(--dark-4);
+    padding: 0.5em 0.75em;
+    border-bottom: 1px solid #303644;
+    font-weight: bold;
+  }
+
+  .gem-purchase-option i {
+    margin-right: 0.3em;
+    font-size: 1.25em;
+  }
+
+  .text-left {
+    text-align: left;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .purchase-btn {
+    flex: 0 0 auto;
+  }
+
+  .old-price {
+    text-decoration: line-through;
+    margin-right: 0.5em;
+  }
+
+  .gem-balance-container {
+    flex: 1;
+    font-size: 1.25em;
+    padding: 1em 3em;
+    border: 2px solid var(--dark-blue-1-outline);
+    color: var(--font-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .fixed-width {
+    width: 7em;
+  }
+
+  .withdraw-earned {
+    margin-top: 2em;
+    font-size: 0.75em;
+  }
+
+  .gem-disclaimer {
+    font-style: oblique;
+    font-size: 0.75em;
+    color: var(--font-1);
+  }
+
+  .subscribers {
+    padding-top: 0.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .banner {
+    width: 100%;
+    height: 5em;
+  }
+
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: var(--border-radius-2);
+    border-top-left-radius: var(--border-radius-2);
+  }
+
+  .subscription-card {
+    width: 18.5em;
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-5);
+    border-radius: var(--border-radius-2);
+  }
+
+  .subscription-card:empty {
+    height: 0;
+    margin: 0 0.5em;
+  }
+
+  .profile-image {
+    margin-top: -1.66em;
+    margin-left: 0.5em;
+  }
+
+  .profile-image .avatar {
+    width: 3.3125em;
+    height: 3.3125em;
+  }
+
+  .fc-account-username.user-name {
+    display: flex;
+    position: relative;
+    font-weight: bold;
+    margin-left: 0.75em;
+    margin-top: 0.5em;
+  }
+
+  .subscription-details {
+    font-size: 0.625em;
+    margin-top: 0.75em;
+    padding: 0.2em 1.2em 0.8em 1.2em;
+    font-weight: bold;
+    color: var(--font-1);
+  }
+}

@@ -1,0 +1,286 @@
+:root {
+  --navbarWidth: 0em;
+  --navbarMobileWidth: 0em;
+  --navbarSmallMobileWidth: 0em;
+  --maxContentWidth: 70em;
+  --navbarMobileHeight: 4em;
+  --navTopHeight: 4.25em;
+  --navBottomHeight: 4.25em;
+  --navTopMobileHeight: 3.75em;
+  --smallMobileBreakPoint: 800px;
+  --smallMobileHeightBreakPoint: 500px;
+  --mobileBreakPoint: 1200px;
+  --sideBarWidth: 20em;
+  --suggestionsBoxWidth: 20em;
+  --currentPageBarHeight: auto;
+  --scroll-bar: rgba(255, 255, 255, 0.1);
+  --scroll-bar-track: rgba(255, 255, 255, 0.03);
+  --button-radius: 0.5em;
+  --font-tint-1: #d6dce8;
+  --font-tint-2: #bbc1cb;
+  --font-tint-3: #9da2ad;
+  --font-tint-4: #637395;
+  --font-tint-5: #637395;
+  --font-tint-6: #637395;
+  --black: #000;
+  --font-1: #d6dce8;
+  --white-2: #f9f9f9;
+  --grey-1: rgb(182, 182, 182);
+  --pure-white: #fff;
+  --dark-blue-1: #637395;
+  --dark-blue-1-outline: #343d53;
+  --icon-color: #637395;
+  --hover-dark-blue: #333d53;
+  --landing-bg-1: #16151a;
+  --landing-bg-2: #1f232b;
+  --landing-font-1: #ffffff;
+  --landing-font-2: rgba(255, 255, 255, 0.7);
+  --dark-1: #15161a;
+  --dark-1-25: rgba(21, 22, 26, 0.25);
+  --dark-1-50: rgba(21, 22, 26, 0.5);
+  --dark-1-75: rgba(21, 22, 26, 0.75);
+  --dark-1-2: rgb(21, 22, 26);
+  --dark-2: #1f2530;
+  --dark-2-2: #1f2530;
+  --dark-3: #20252f;
+  --radial-bg-1: #20252f;
+  --radial-bg-2: #1a1d22;
+  --selected-tab: #20252f;
+  --dark-4: #24222b;
+  --dark-5: #1b1c21;
+  --locked-text-bg: #1b1c21;
+  --modal-bg: #1b1c21;
+  --dropdown-bg-color: #1b1c21;
+  --dropdown-bg-color-hover: #343d53;
+  --pure-white-alpha-50: rgba(255, 255, 255, 0.5);
+  --nav-color: #1b1c21;
+  --dark-6: #1a1e26;
+  --dark-7: #2f3e5d;
+  --input-bg: #121317;
+  --sub-color-1: #3f4960;
+  --sub-color-2: #2699f7;
+  --sub-color-3: rgb(20, 145, 255);
+  --pure-black: #000;
+  --black-1: #202020;
+  --black-1-hover: #242424;
+  --blue-1: #279eff;
+  --blue-1-alpha: #46a8f89c;
+  --blue-1-alpha-2: #46a8f828;
+  --blue-1-alpha-2-hover: #46a8f83a;
+  --blue-1-hover: #419fec;
+  --blue-1-disabled: #3a749b;
+  --blue-1-outline: #2b4158;
+  --blue-2: #4ea3db;
+  --red-1: #c35b5b;
+  --red-1-hover: #c55656;
+  --red-1-outline-hover: #c556564b;
+  --red-2: #e91916;
+  --red-2-hover: #ff2824;
+  --red-2-outline-hover: #e919164b;
+  --grey-2: #3c3c3e;
+  --green-1: #40bb55;
+  --green-1-hover: #40bb55;
+  --green-2: #77ce78;
+  --green-3: #2fbc86;
+  --orange-2: #c97259;
+  --orange-1: #ffad42b7;
+  --orange-1-alpha: #ffad429e;
+  --grey-2-outline: #9da2ad;
+  --border-color: rgba(255, 255, 255, 0.03);
+  --hover-alpha: rgba(255, 255, 255, 0.02);
+  --post-hover-alpha: rgba(255, 255, 255, 0.01);
+  --extreme-alpha: rgba(255, 255, 255, 0.1);
+  --post-content: #e2e8f0;
+  --white-hover: #fff;
+  --pure-inversed: #fff;
+  --dark-inversed: #fff;
+  --grayscale-level: grayscale(0.5);
+  --dark-transparency: rgba(0, 0, 0, 0.8);
+  --border-radius-1: 0.1em;
+  --border-radius-2: 0.5em;
+  --border-radius-3: 0.25em;
+  --border-radius-4: 0.5em;
+  --input-addon: #343d53;
+  --switch: rgba(255, 255, 255, 0.2);
+  --switch-selected: #77ce79b9;
+  --switch-toggle: rgba(255, 255, 255, 3);
+  --switch-toggle-selected: #77ce78;
+  --switch-toggle-active: #77ce7941;
+  --box-shadow-1: rgb(0 0 0 / 6%) 0px 3px 3px -2px,
+    rgb(0 0 0 / 4%) 0px 3px 4px 0px, rgb(0 0 0 / 2%) 0px 2px 8px 0px;
+  --box-shadow-2: rgb(0 0 0 / 6%) 0px 3px 3px -2px,
+    rgb(0 0 0 / 4%) 0px 3px 4px 0px, rgb(0 0 0 / 2%) 0px 2px 8px 0px;
+  --box-shadow-3: rgb(0 0 0 / 6%) 0px 3px 3px -2px,
+    rgb(0 0 0 / 4%) 0px 3px 4px 0px, rgb(0 0 0 / 2%) 0px 2px 8px 0px;
+  --text-shadow-2: 0px 3px 3px rgb(0 0 0 / 6%), 0px 3px 4px rgb(0 0 0 / 4%),
+    0px 2px 8px rgb(0 0 0 / 2%);
+  --text-shadow-1: 0px 3px 3px rgb(0 0 0 / 15%), 0px 3px 4px rgb(0 0 0 / 10%),
+    0px 2px 8px rgb(0 0 0 / 5%);
+  --blue-1: #2699f7;
+  --blue-1-alpha: #2699f79c;
+  --blue-1-alpha-2: #2699f728;
+  --blue-1-hover: #2699f7;
+  --blue-1-disabled: #2699f7;
+  --blue-1-outline: #2699f7;
+  --blue-2: #2699f7;
+  --recap-font-color: #dadada;
+  --recap-highlight-color: #4690ce;
+  --recap-white: #fbfeff;
+}
+
+* {
+  overscroll-behavior: contain;
+  overscroll-behavior-block: contain;
+  scroll-boundary-behavior: contain;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--font-1);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  /* for removing the highlight */
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
+body {
+  overflow-y: scroll;
+}
+
+.dark-theme-only {
+  display: block;
+}
+
+.bright-theme-only {
+  display: none;
+}
+
+@supports (padding: max(0px)) {
+  body {
+    padding-left: min(0vmin, env(safe-area-inset-left));
+    padding-right: min(0vmin, env(safe-area-inset-right));
+  }
+}
+
+/* global elements, buttons and such
+  */
+
+div:focus {
+  outline: 0;
+}
+
+/* global elements end */
+
+/* Page header */
+
+/* Page header end */
+
+/* width */
+
+/* Track */
+
+/* Handle */
+
+/* keyframes */
+
+img {
+  pointer-events: none !important;
+}
+
+.margin-top-2 {
+  margin-top: 0.75em;
+}
+
+/* active state */
+/*!
+  * Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com
+  * License - https://fontawesome.com/license (Commercial License)
+  * Copyright 2023 Fonticons, Inc.
+  */
+
+.fal {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+.fal {
+  font-family: 'Font Awesome 6 Pro';
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-spin {
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+}
+
+.fa-spin {
+  animation-name: fa-spin;
+  animation-duration: var(--fa-animation-duration, 2s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-spin {
+    animation-delay: -1ms;
+    animation-duration: 1ms;
+    animation-iteration-count: 1;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.fa-spinner-third:before {
+  content: '\f3f4';
+}
+
+:root {
+  --fa-style-family-brands: 'Font Awesome 6 Brands';
+  --fa-font-brands: normal 400 1em/1 'Font Awesome 6 Brands';
+}
+
+:root {
+  --fa-font-light: normal 300 1em/1 'Font Awesome 6 Pro';
+}
+
+.fal {
+  font-weight: 300;
+}
+
+:root {
+  --fa-font-regular: normal 400 1em/1 'Font Awesome 6 Pro';
+}
+
+:root {
+  --fa-style-family-classic: 'Font Awesome 6 Pro';
+  --fa-font-solid: normal 900 1em/1 'Font Awesome 6 Pro';
+}

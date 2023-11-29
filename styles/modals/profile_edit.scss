@@ -1,0 +1,305 @@
+.fc-profile-edit-modal {
+  pointer-events: all;
+  z-index: 1;
+  background-color: var(--modal-bg);
+  box-shadow: 0 1em 2.5em rgba(0, 0, 0, 0.3);
+  border-radius: 0.125em;
+  width: 100%;
+  max-width: 36em;
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
+
+  .input-container {
+    padding: 0.5em;
+    width: calc(100% - 2em);
+    box-sizing: border;
+    margin: 0.25em 0;
+    color: var(--font-tint-2);
+    position: relative;
+  }
+
+  .material-input .label,
+  .dropdown-title.material .label {
+    color: var(--dark-blue-1);
+    line-height: 1.6em;
+    font-size: 1em;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 1em;
+    top: 7px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    right: 0;
+  }
+
+  .material-input.icon-left .icon-left {
+    background-color: var(--dark-2);
+    left: 1px;
+    top: 1px;
+    bottom: 1px;
+    padding-left: 0.5em;
+    padding-right: 0.1em;
+    border-radius: var(--button-radius);
+  }
+
+  .material-input.icon-left.twitter .label,
+  .material-input.icon-left.twitter .placeholder {
+    left: 6.5em;
+  }
+
+  .material-input.icon-left.twitter input,
+  .material-input.icon-left.twitter select,
+  .material-input.icon-left.twitter textarea {
+    padding-left: 7.375em;
+  }
+
+  .material-input.icon-left.instagram .label,
+  .material-input.icon-left.instagram .placeholder {
+    left: 8em;
+  }
+
+  .material-input.icon-left.instagram input,
+  .material-input.icon-left.instagram select,
+  .material-input.icon-left.instagram textarea {
+    padding-left: 9em;
+  }
+
+  .material-input.icon-left.tiktok .label,
+  .material-input.icon-left.tiktok .placeholder {
+    left: 7.375em;
+  }
+
+  .material-input.icon-left.tiktok input,
+  .material-input.icon-left.tiktok select,
+  .material-input.icon-left.tiktok textarea {
+    padding-left: 8.5em;
+  }
+
+  .material-input input:focus ~ .label,
+  .material-input input:valid ~ .label {
+    top: -6px !important;
+    left: 1em;
+    font-size: 12px;
+    color: var(--blue-1);
+    background-color: var(--dark-1);
+    padding: 0 0.2em;
+    line-height: 1;
+    right: unset !important;
+  }
+
+  .material-input input:-webkit-autofill ~ .label {
+    top: -6px !important;
+    left: 1em;
+    font-size: 12px;
+    color: var(--blue-1);
+    background-color: var(--dark-1);
+    padding: 0 0.2em;
+    line-height: 1;
+    right: unset !important;
+  }
+
+  .material-input textarea:focus ~ .label,
+  .material-input textarea:valid ~ .label {
+    visibility: hidden;
+    display: none;
+    top: -4px !important;
+    left: 1em;
+    font-size: 12px;
+    color: var(--blue-1);
+    background-color: var(--dark-1);
+    padding: 0 0.2em;
+    line-height: 1;
+    right: unset !important;
+  }
+
+  .material-input textarea:-webkit-autofill ~ .label {
+    visibility: hidden;
+    display: none;
+    top: -4px !important;
+    left: 1em;
+    font-size: 12px;
+    color: var(--blue-1);
+    background-color: var(--dark-1);
+    padding: 0 0.2em;
+    line-height: 1;
+    right: unset !important;
+  }
+
+  input[type='text'],
+  input[type='password'],
+  input[type='number'],
+  textarea {
+    width: 100%;
+  }
+
+  .input-title {
+    color: var(--font-1);
+    font-weight: bold;
+    margin-bottom: 0.2em;
+    margin-left: 2px;
+  }
+
+  .modal-header {
+    box-sizing: border-box;
+    padding: 0em 1em 0em 1em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    flex: 0 0 auto;
+  }
+
+  .modal-header i {
+    flex: 0 0 auto;
+    cursor: pointer;
+    font-size: 1.25em;
+  }
+
+  .modal-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .save-changes {
+    margin-left: 0.4em;
+  }
+
+  .modal-content {
+    box-sizing: border-box;
+    position: relative;
+    padding: 1.5em 0em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    align-items: center;
+  }
+
+  .close-modal {
+    flex: 0 0 auto;
+  }
+
+  .modal-header-title {
+    flex: 1;
+    font-weight: bold;
+  }
+
+  .avatar-container {
+    width: 6em;
+    height: 6em;
+    margin-left: 2em;
+    align-self: flex-start;
+    margin-top: -3em;
+    border-radius: 50%;
+    position: relative;
+    z-index: 3;
+  }
+
+  .avatar-container .icon-wrapper {
+    right: -0.75em;
+    bottom: 0;
+    width: 2.25em;
+    color: var(--blue-1);
+    height: 2.25em;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--dark-5);
+  }
+
+  .avatar {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .fc-account-avatar {
+    width: 5em;
+    height: 5em;
+  }
+
+  .drop-image {
+    width: 11em;
+    height: 11em;
+    background-color: var(--dark-4);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    cursor: pointer;
+  }
+
+  .drop-image i {
+    pointer-events: none;
+  }
+
+  .banner-container {
+    background-color: var(--dark-1);
+    width: 100%;
+    height: 14em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .banner-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  img.banner-media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius-2);
+  }
+
+  img.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .banner-container .icon-wrapper {
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--dark-2);
+    width: 3em;
+    height: 3em;
+    font-size: 1.5em;
+    color: var(--blue-1);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-wrapper:hover i {
+    transform: scale(1.05);
+  }
+}

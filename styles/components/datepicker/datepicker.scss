@@ -1,0 +1,149 @@
+.fc-date-picker {
+  overflow: unset;
+  max-width: 100%;
+  width: 25em;
+
+  .modal {
+    overflow: unset;
+    max-width: 100%;
+    width: 25em;
+  }
+
+  .modal-header {
+    display: flex;
+    flex: 0 0 auto;
+    color: var(--font-1);
+    font-weight: bold;
+    padding-bottom: 0.5em;
+  }
+
+  .modal-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.875em;
+    color: var(--dark-blue-1);
+  }
+
+  i.fa-calendar-alt {
+    margin-right: 0.5em;
+  }
+
+  .title {
+    color: var(--font-1);
+    font-weight: bold;
+    margin-top: 1em;
+  }
+
+  .dropdown-list {
+    width: 100%;
+  }
+
+  .default-dropdown {
+    margin: 0.25em 0;
+    width: 33%;
+    flex: 0 0 auto;
+  }
+
+  .month {
+    flex: 3;
+  }
+
+  .day {
+    flex: 2;
+  }
+
+  .year {
+    flex: 2;
+  }
+
+  .hour {
+    flex: 1;
+  }
+
+  .minute {
+    flex: 1;
+  }
+
+  .timezone {
+    margin-top: 1em;
+  }
+
+  .scheduled-posts {
+    color: var(--blue-1);
+    font-size: 1;
+    cursor: pointer;
+  }
+
+  .scheduled-posts-container {
+    overflow-y: auto;
+  }
+
+  .modal-footer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+    align-items: center;
+  }
+
+  .confirm-btn {
+    font-size: 0.75em;
+  }
+
+  .error-text {
+    color: var(--red-1);
+    padding-left: 0.25em;
+    margin-top: 0.5em;
+  }
+
+  .xd-date-picker {
+    background-color: var(--modal-bg);
+    border: none;
+
+    .react-datepicker__header {
+      border: none;
+      padding: 0;
+      background-color: var(--modal-bg);
+      * {
+        color: var(--font-1);
+      }
+    }
+
+    .react-datepicker__day-names {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.1em 0.5em 0;
+    }
+
+    .react-datepicker__month {
+      margin: 0.5em 0;
+    }
+
+    .react-datepicker__day {
+      color: var(--blue-1);
+      padding: 0.2em 0.7em;
+      font-size: 0.875em;
+      border: 2px solid transparent;
+      border-radius: 2px;
+
+      &:hover {
+        background-color: transparent;
+        border: 2px solid var(--blue-1);
+      }
+    }
+
+    .react-datepicker__day--selected {
+      border-color: var(--blue-1);
+      background-color: var(--blue-1);
+      color: var(--pure-inversed);
+    }
+
+    .react-datepicker__day-name {
+      padding: 0.75em 0.4em;
+    }
+
+    .react-datepicker__day--outside-month {
+      color: var(--pure-inversed);
+    }
+  }
+}

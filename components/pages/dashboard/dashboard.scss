@@ -1,0 +1,230 @@
+#m_creator_dashboard {
+}
+
+.home-page {
+  padding: 0;
+}
+
+.dashboard-list {
+  display: flex;
+  flex-direction: column;
+
+  .dashboard-item {
+    flex: 0 0 auto;
+    padding: 0.7em 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.dashboard-plan-route {
+  .title {
+    margin-bottom: 0;
+  }
+  .description {
+    font-size: 0.875em;
+    letter-spacing: 0.03em;
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 1.75em;
+    text-align: left;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: var(--dark-blue-1);
+  }
+
+  .subscription-plans-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.subscription-tier-box {
+  padding: 10px;
+  margin-bottom: 2em;
+  border-radius: 0.4em;
+  background-color: var(--dark-5);
+
+  .subscription-tier-title {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+
+  .subscription-tier-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8em;
+    margin-top: 1em;
+  }
+
+  .subscription-plan2 {
+    height: 2.5em;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--pure-white);
+    background-color: var(--sub-color-2);
+    padding: 0.5em 1em;
+    margin: 0.4em 0;
+    border-radius: 1.25em;
+    font-weight: bold;
+    font-size: 0.9em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 100ms linear;
+
+    .subscription-title {
+      flex: 1 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      z-index: 2;
+      overflow: hidden;
+    }
+  }
+}
+.subscription-tier-box.status0{
+  // border: 2px solid #c35b5b;
+  opacity: 0.1;
+  transition: all 0.3s;
+}
+.subscription-tier-box.status1{
+  // border: 2px solid #c35b5b;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.subscribers-wrapper {
+  padding-top: 0.5em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .subscriber-card {
+    width: 18.5em;
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-5);
+    border-radius: var(--border-radius-2);
+
+    .subscriber-head {
+      padding: 1em 0.6em 0.3em 0.6em;
+      .profile-image {
+        margin-right: 0.7em;
+      }
+    }
+
+    .subscription-details {
+      font-size: 0.625em;
+      margin-top: 0.75em;
+      padding: 0.2em 1.2em 0.8em 1.2em;
+      font-weight: bold;
+      color: var(--font-1);
+    }
+  }
+}
+
+.dashboard-uploads {
+  .description {
+    font-size: 0.875em;
+    letter-spacing: 0.03em;
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 1.75em;
+    text-align: left;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: var(--dark-blue-1);
+  }
+}
+
+.dashboard-top-supporters {
+  padding: 0.5em 1em;
+
+  .page-description {
+    font-size: 0.875em;
+    letter-spacing: 0.03em;
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 1.75em;
+    text-align: left;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: var(--dark-blue-1);
+  }
+
+  .date-range-picker {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 1em 0;
+    gap: 0.5em;
+    align-items: center;
+
+    input {
+      color: var(--font-1);
+      outline: none;
+    }
+
+    .date-range-display {
+      // border-radius: 5px;
+      // padding: 0.3em 0.5em;
+      // border: 1px solid;
+    }
+  }
+
+  .supporters-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .supporter-item {
+      border: 2px solid;
+      border-color: var(--border-color);
+      border-radius: var(--border-radius-2);
+      padding: 0.5em 1em;
+
+      .fc-account-avatar {
+        width: 2.6em;
+        height: 2.6em;
+      }
+    }
+  }
+}
+
+.dashboard-earnings {
+  .wallet-wrapper {
+    .bold {
+      font-size: 1.1em;
+    }
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: var(--border-radius-2);
+    background-color: var(--dark-5);
+  }
+
+  .stats-wrapper {
+    .filter {
+      margin-top: 1em;
+      flex-wrap: wrap;
+      gap: 1em;
+
+      input {
+        // outline: none !important;
+        // border: none;
+        &:focus {
+          border-color: red;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.fc-account-explore-route {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: unset;
+  overflow-x: unset;
+  overflow-y: unset;
+}
+
+.fc-account-explore-route {
+  .fc-suggestions-side-bar-new {
+    width: 100%;
+  }
+
+  .spacer {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .timeline-spacer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 8em 0 8em 0;
+  }
+
+  .timeline-spacer i {
+    font-size: 2em;
+  }
+
+  .follower {
+    padding: 8px;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .fc-account-username {
+    width: 48px;
+    height: 48px;
+  }
+
+  .search-result-container {
+    margin-top: 0.5em;
+    padding: 0 0.5em 0 0.5em;
+  }
+
+  .tag-suggestion-container {
+    padding: 0.25em 0.5em 1em 1em;
+  }
+
+  .text-margin-bubble {
+    margin: 1.4375em 0;
+  }
+
+  .title-container {
+    padding: 0 0.5em 0 1em;
+  }
+
+  .fc-media-offer-suggestions-timeline-post .fyp-gallery {
+    height: 250px;
+  }
+
+  .fc-media-offer-suggestions-timeline-post {
+    margin-top: -8px;
+  }
+}

@@ -1,0 +1,13 @@
+.fc-settings-notifications-route {
+  padding: 0px 4px;
+  margin-top: -0.5em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  .toggle-settings {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

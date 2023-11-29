@@ -1,0 +1,30 @@
+.admin-page-list {
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+  }
+}
+.admin-user-item {
+  padding: 0.5em;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: var(--blue-1-alpha-2);
+  }
+}
+
+.admin-user-media-wrapper {
+  .gallery-row {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+.admin-application-item {
+  border-radius: 5px;
+  &:hover {
+    background-color: var(--blue-1-alpha-2);
+  }
+}

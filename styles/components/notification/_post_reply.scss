@@ -1,0 +1,35 @@
+.fc-post-reply-notification {
+  display: flex;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+
+  .fc-post {
+    margin-top: 1em;
+    margin-left: 2.2em;
+    width: 100%;
+    max-width: 25em;
+  }
+
+  .notification-type {
+    color: var(--red-1);
+    font-size: 2em;
+    margin-right: 0.5em;
+  }
+
+  .notification-content {
+    align-items: center;
+    font-size: 1em;
+  }
+
+  .reply-content {
+    margin-left: 5em;
+    font-size: 1em;
+    align-self: stretch;
+  }
+
+  .user-name {
+    display: inline-block;
+    flex: 0 0 auto;
+  }
+}

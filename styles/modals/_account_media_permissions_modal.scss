@@ -1,0 +1,70 @@
+.fc-account-media-permissions-modal {
+  max-width: 100%;
+  width: 35em;
+  height: auto;
+  max-height: 100%;
+
+  .modal {
+    max-width: 100%;
+    width: 35em;
+    height: auto;
+    max-height: 100%;
+  }
+
+  .sale-row {
+    box-sizing: border-box;
+    padding: 0.5em 0.75em;
+    color: var(--dark-blue-1);
+    border: 1px solid #3c3d44;
+    border-radius: var(--border-radius-2);
+    align-items: center;
+    display: flex;
+    flex-direction: Row;
+    margin: 0.25em 0.25em;
+  }
+
+  .sale-row {
+    width: 24em;
+  }
+
+  .sale-title {
+    width: 12em;
+    max-width: 50%;
+  }
+
+  .circle {
+    width: 1.1em;
+    height: 1.1em;
+    border-radius: 50%;
+    margin-right: 0.5em;
+  }
+
+  .circle.purple {
+    background: rgb(219, 98, 239);
+    background: linear-gradient(
+      225deg,
+      rgb(219, 98, 239) 0%,
+      rgb(69, 24, 123) 100%
+    );
+  }
+
+  .circle.orange {
+    background: #e5a75c;
+    background: linear-gradient(225deg, #e5a75c 0%, #7c401d 100%);
+  }
+
+  .circle.white {
+    background: #e2e2e2;
+    background: linear-gradient(225deg, #e2e2e2 0%, #888888 100%);
+  }
+
+  .circle.green {
+    background: #5ce599;
+    background: linear-gradient(225deg, #5ce599 0%, #1d7c23 100%);
+  }
+
+  .circle.blue {
+    background: #5ca3e5;
+    background: linear-gradient(225deg, #5ca3e5 0%, #1d427c 100%);
+  }
+}

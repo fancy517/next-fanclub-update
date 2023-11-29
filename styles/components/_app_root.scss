@@ -1,0 +1,485 @@
+#app_root {
+  display: inline;
+
+  .account-card-overlay {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    pointer-events: none;
+    z-index: 999;
+  }
+
+  .modal-wrapper {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 998;
+    pointer-events: none;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .scroll-top-button {
+    position: fixed;
+    z-index: 3;
+    bottom: 5em;
+    right: 1em;
+    animation: dropdown 200ms;
+    transition: transform 100ms ease-out;
+    border-radius: 50%;
+    background-color: var(--dark-1);
+    width: 3em;
+    height: 3em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    i,
+    svg {
+      color: var(--pure-inversed);
+      display: Block;
+    }
+  }
+
+  .scroll-top-button {
+    box-shadow: var(--box-shadow-1);
+  }
+
+  .scroll-top-button:hover {
+    transition: transform 200ms ease-out;
+    transform: scale(1.1);
+    box-shadow: var(--box-shadow-2);
+  }
+
+  .global-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-size: 1em;
+    background-color: var(--dark-1);
+  }
+
+  .menu-open .fc-nav-bar-top {
+    transform: translateX(20em);
+    transition: transform 200ms linear;
+  }
+
+  .menu-open .fc-nav-bar-mobile {
+    transform: translateX(20em);
+    transition: transform 200ms linear;
+  }
+
+  .menu-open .content-wrapper {
+    transform: translateX(20em);
+    transition: transform 200ms linear;
+  }
+
+  .menu-open .scroll-top-button {
+    transform: translateX(20em);
+    transition: transform 200ms linear;
+  }
+
+  .menu-open .alert-wrapper {
+    transform: translateX(20em);
+    transition: transform 200ms linear;
+  }
+
+  .menu-open .modal-wrapper {
+    transform: translateX(20em);
+    transition: transform 200ms linear;
+  }
+
+  .menu-open .account-card-overlay {
+    transform: translateX(20em);
+    transition: transform 200ms linear;
+  }
+
+  app-nav-menu-side,
+  .fc-nav-menu-side {
+    animation: slideInLeft 200ms linear;
+    -moz-animation: slideInLeft 200ms linear;
+    -webkit-animation: slideInLeft 200ms linear;
+    -o-animation: slideInLeft 200ms linear;
+    z-index: 1000;
+  }
+
+  .menu-open-overlay {
+    position: fixed;
+    width: 100%;
+    left: 20em;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    overscroll-behavior: none;
+    background-color: rgba(10, 10, 10, 0.5);
+    animation: slideFadeInLeft 200ms linear;
+    -moz-animation: slideFadeInLeft 200ms linear;
+    -webkit-animation: slideFadeInLeft 200ms linear;
+    -o-animation: slideFadeInLeft 200ms linear;
+  }
+
+  @media only screen and (max-width: 380px) {
+    .menu-open .fc-nav-bar-top {
+      transform: translateX(14em);
+    }
+
+    .menu-open .fc-nav-bar-mobile {
+      transform: translateX(14em);
+    }
+
+    .menu-open .content-wrapper {
+      transform: translateX(14em);
+    }
+
+    .menu-open .scroll-top-button {
+      transform: translateX(14em);
+    }
+
+    .menu-open .alert-wrapper {
+      transform: translateX(14em);
+    }
+
+    .menu-open .modal-wrapper {
+      transform: translateX(14em);
+    }
+
+    .menu-open .account-card-overlay {
+      transform: translateX(14em);
+    }
+
+    .menu-open-overlay {
+      position: fixed;
+      left: 0;
+      left: 14em;
+      top: 0;
+      bottom: 0;
+      z-index: 999;
+      overscroll-behavior: none;
+      background-color: rgba(10, 10, 10, 0.5);
+    }
+  }
+
+  .site-wrapper {
+    position: relative;
+    font-size: 100%;
+    line-height: 160%;
+    padding-top: 0;
+    min-height: 100%;
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  .site-wrapper.nav-bar-visible {
+    padding-top: 4.25em;
+  }
+
+  .site-wrapper.nav-bar-top-visible {
+    padding-top: 4.25em;
+  }
+
+  .nav-bar-wrapper {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 4.25em;
+    bottom: 0;
+    width: 100%;
+    max-width: calc(0em + 70em);
+    pointer-events: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navigation {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .web-app-available {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    background-color: rgb(86, 177, 204);
+    color: #fff;
+  }
+
+  .navigation .nav-left {
+    height: 100%;
+    flex: 1;
+  }
+
+  .navigation .nav-right {
+    height: 100%;
+    flex: 1;
+  }
+
+  .nav-bar {
+    flex: 0 0 auto;
+    display: flex;
+    height: 100%;
+    overflow-y: auto;
+    align-self: flex-end;
+    pointer-events: all;
+    z-index: 3;
+  }
+
+  & > .fc-theme-controller {
+    opacity: 0;
+    pointer-events: 0;
+  }
+
+  .content-wrapper #m_router_outlet + * {
+    flex: 20;
+    position: relative;
+    display: flex;
+    max-width: 70em;
+    margin-left: 0em;
+    z-index: 1;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .content-wrapper #m_router_outlet + * {
+      margin-left: 0em;
+    }
+
+    .nav-bar-wrapper {
+      max-width: calc(70em + 0em);
+    }
+  }
+
+  @media only screen and (max-width: 800px),
+    only screen and (max-height: 900px) and (max-width: 1000px),
+    only screen and (max-height: 480px) {
+    .content-wrapper #m_router_outlet + * {
+      margin-left: 0;
+    }
+
+    .scrolling-down .fc-nav-bar-top {
+      display: none;
+    }
+
+    .is-live-route .fc-nav-bar-top {
+      display: none;
+    }
+
+    .app-mobile-hidden {
+      display: none !important;
+    }
+
+    .nav-bar-wrapper {
+      position: fixed;
+      z-index: 2;
+      left: 0;
+      right: 0;
+      top: unset;
+      height: auto;
+      bottom: 0;
+      width: 100%;
+      pointer-events: none;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .site-wrapper {
+      padding-bottom: 0;
+    }
+
+    .site-wrapper.nav-bar-visible {
+      padding-bottom: var(--navbarMobileHeight);
+      padding-top: 0;
+    }
+
+    .site-wrapper.nav-bar-top-visible {
+      padding-top: 3.25em;
+    }
+
+    .site-wrapper.is-live-route {
+      padding-top: 0;
+    }
+
+    .is-for-you-route .fc-nav-bar-top {
+      display: none !important;
+    }
+
+    .site-wrapper.is-for-you-route {
+      padding-top: 0 !important;
+    }
+
+    .nav-bar {
+      flex: 0 0 auto;
+      display: flex;
+      width: 100%;
+      height: 4em;
+      overflow: unset;
+      align-self: flex-end;
+      pointer-events: all;
+      z-index: 1;
+    }
+
+    .scroll-top-button {
+      bottom: 9em;
+    }
+  }
+
+  .spacer {
+    display: none;
+  }
+
+  .fc-nav-bar-top {
+    z-index: 3;
+  }
+
+  .content-wrapper {
+    flex: 1;
+    max-width: 100%;
+    overflow: visible;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  .nav-bar-visible .content-wrapper {
+  }
+
+  .nav-bar-toggle {
+    position: absolute;
+    top: 2em;
+    height: 3em;
+    left: -0.9em;
+    z-index: 0;
+    pointer-events: none;
+
+    .nav-bar-toggle-bg {
+      background-color: #36393f;
+      width: 3em;
+      height: 3em;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0.2em;
+      transform: rotate(45deg);
+
+      border-radius: 0.75em;
+      pointer-events: none;
+    }
+
+    .nav-bar-toggle-content {
+      width: 1.5em;
+      height: 3em;
+      box-sizing: padding-box;
+      text-align: center;
+      z-index: 3;
+      color: #727478;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      pointer-events: all;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--pure-white);
+      }
+
+      i,
+      svg {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .nav-bar-toggle-wrapper {
+    position: relative;
+  }
+
+  .alert-wrapper {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 9999;
+    pointer-events: none;
+    left: 0.5em;
+    right: 0;
+    bottom: 0;
+    top: calc(4.25em + 0.5em);
+  }
+
+  @media only screen and (max-width: 1400px) {
+    .content-wrapper #m_router_outlet + * {
+      flex: 20;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+    }
+  }
+
+  @media only screen and (max-width: 1350px) {
+    .content-wrapper #m_router_outlet + * {
+      flex: 20;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+    }
+  }
+
+  @media only screen and (max-width: 1250px) {
+    .content-wrapper #m_router_outlet + * {
+      flex: 20;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+    }
+  }
+
+  @media only screen and (max-width: 1430px) {
+    app-zendesk-support-button {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .global-wrapper {
+      font-size: 0.9em;
+    }
+  }
+
+  .site-wrapper.landing {
+    padding-top: 0 !important;
+  }
+
+  .site-wrapper.landing .content-wrapper #m_router_outlet + * {
+    max-width: unset;
+  }
+}

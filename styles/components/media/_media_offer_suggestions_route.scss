@@ -1,0 +1,38 @@
+.fc-media-offer-suggestions-route {
+  width: 100%;
+  height: 100%;
+  max-height: calc(100vh - 4.25em - env(safe-area-inset-bottom));
+  max-height: calc(
+    (var(--vh, 1vh) * 100) - 4.25em - env(safe-area-inset-bottom)
+  );
+  overflow: hidden;
+  position: relative;
+  flex: 0 0 auto;
+
+  .fc-media-offer-suggestions-browser {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    flex: 0 0 auto;
+    display: flex;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 800px),
+  only screen and (max-height: 900px) and (max-width: 1000px),
+  only screen and (max-height: 480px) {
+  .fc-media-offer-suggestions-route {
+    max-height: calc(
+      100vh - var(--navbarMobileHeight) - env(safe-area-inset-bottom) - 3.5em
+    );
+    max-height: calc(
+      var(--vh, 1vh) * 100 - var(--navbarMobileHeight) - env(
+          safe-area-inset-bottom
+        )
+    );
+  }
+}

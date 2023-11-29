@@ -1,0 +1,252 @@
+.fc-account-subscription-plans {
+  line-height: 1.6em;
+
+  .subscription-plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0.75em 0.5em;
+    box-sizing: border-box;
+    border-radius: var(--border-radius-2);
+    margin: 0;
+    transition: background-color 100ms linear;
+  }
+
+  .subscription-plans:hover {
+    background-color: var(--dark-5);
+    transition: background-color 100ms linear;
+  }
+
+  .seperator {
+    border-top: 1px solid transparent;
+    border-color: var(--border-color) !important;
+    height: 1px;
+    width: 100%;
+  }
+
+  .subscription-tier-title {
+    font-weight: bold;
+    font-size: 1.125em;
+    align-items: center;
+    width: 100%;
+  }
+
+  .title-wrapper {
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .subscription-tier-description {
+    padding-left: 0.3em;
+    margin: 0.5em 0;
+  }
+
+  .limited-offer {
+    padding-left: 0.3em;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .limited-offer .offer-title {
+    font-size: 1.125em;
+    font-weight: bold;
+  }
+
+  .collapse-action {
+    margin-right: 1px;
+  }
+
+  .limited-offer .offer-ends-at {
+    font-size: 0.875em;
+    color: var(--dark-blue-1);
+    line-height: 1;
+  }
+
+  .subscription-tier-description .avatar {
+    width: 1.8em;
+    height: 1.8em;
+    flex: 0 0 auto;
+  }
+
+  .sub-bundles {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 0.75em;
+    margin-top: 0.5em;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .bundles-container {
+    margin-top: 0.25em;
+  }
+
+  .subscription-tier-description .description-text {
+    margin-left: 0.5em;
+    flex: 1;
+    font-size: 0.875em;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+  .bundles-header:hover .collapse-action i {
+    color: var(--blue-1);
+  }
+
+  .subscription-plan {
+    flex: 0 0 auto;
+    height: 2.5em;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--pure-white);
+    background-color: var(--sub-color-2);
+    padding: 0.5em 1em;
+    margin: 0.3em 0;
+    border-radius: 1.25em;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 100ms linear;
+  }
+
+  .subscription-plan:empty {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 0;
+  }
+
+  .subscription-plan:hover {
+    transform: scale(1.005);
+    transition: transform 100ms linear;
+  }
+
+  .gift-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.35);
+    z-index: 4;
+    overflow: hidden;
+  }
+
+  .free {
+    background-color: var(--green-3);
+  }
+
+  .not-available,
+  .active {
+    background-color: var(--sub-color-2);
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  .three-month {
+    background-color: var(--sub-color-2);
+  }
+
+  .subscription-title {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  .subscription-price {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .subscription-promotion-text {
+    z-index: 2;
+    font-weight: normal;
+    font-size: 0.875em;
+  }
+
+  .subscription-price-text {
+    z-index: 2;
+  }
+
+  .bulk-discount {
+    z-index: 2;
+    font-weight: normal;
+    font-size: 0.875em;
+  }
+
+  .background-cutoff {
+    width: 20em;
+    height: 20em;
+    right: 0;
+    bottom: 0;
+    transform: rotate(45deg);
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in;
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: 150ms;
+    -webkit-transition-timing-function: ease-in;
+  }
+
+  .subscription-plan:hover .background-cutoff {
+    transform: translate(-100%);
+  }
+
+  @keyframes _ngcontent-ng-c3818583999_breathing {
+    0% {
+      transform: scale(1);
+    }
+
+    25% {
+      transform: scale(1.1);
+    }
+
+    50% {
+      transform: scale(1);
+    }
+
+    75% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes _ngcontent-ng-c3818583999_gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}

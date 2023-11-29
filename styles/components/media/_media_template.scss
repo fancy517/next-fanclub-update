@@ -1,0 +1,30 @@
+.fc-media-template {
+  display: block;
+  position: relative;
+
+  img,
+  app-video-element {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .audio-wrapper {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background-color: var(--dark-3);
+    background: radial-gradient(
+      circle,
+      var(--radial-bg-1) 5%,
+      var(--radial-bg-2) 250%
+    );
+    box-shadow: var(--box-shadow-3);
+  }
+
+  .audio {
+    width: 95%;
+    max-width: 18em;
+    height: 24px;
+  }
+}

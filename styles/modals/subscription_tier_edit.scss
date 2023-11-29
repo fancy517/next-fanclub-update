@@ -1,0 +1,35 @@
+.subscription-tier-edit-modal {
+  width: 30em;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+
+  .modal {
+    width: 30em;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+
+  .modal-content {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .subtitle {
+    font-weight: bold;
+    font-size: 0.95em;
+  }
+
+  .material-input {
+    margin-top: 0.8em;
+  }
+
+  .subscription-tier-benefit-wrapper {
+  }
+}
+
+::-webkit-color-swatch,
+::-moz-color-swatch {
+  border-color: red;
+}

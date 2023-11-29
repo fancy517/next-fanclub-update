@@ -1,0 +1,135 @@
+.fc-account-username {
+  min-height: 1.6em;
+  text-decoration: none;
+  display: inline;
+}
+
+.fc-account-username {
+  div {
+    outline: none;
+  }
+
+  .verified-status {
+    margin: 0 0.2em;
+    color: var(--blue-1);
+    font-size: 0.9em;
+  }
+
+  .username-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .username-wrapper {
+    color: var(--font-1);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .notes-icon {
+    pointer-events: all !important;
+  }
+
+  .notes-icon.has-notes {
+    color: var(--blue-1) !important;
+  }
+
+  .username-wrapper.no-interaction {
+    cursor: default;
+  }
+
+  .username-wrapper .display-name {
+    margin-right: 0.15em;
+    font-weight: bold;
+  }
+
+  .username-wrapper:hover .display-name {
+    text-decoration: underline;
+  }
+
+  .username-wrapper.no-interaction:hover .display-name {
+    text-decoration: none;
+  }
+
+  .username-wrapper .user-name {
+    color: var(--dark-blue-1);
+    font-weight: normal;
+    font-size: 0.875em;
+    white-space: nowrap;
+  }
+
+  .username-wrapper .only-user-name {
+    color: var(--dark-blue-1);
+    font-weight: bold;
+    font-size: 1em;
+  }
+
+  .username-wrapper .only-user-name:hover {
+    color: var(--blue-1);
+  }
+
+  i.fas.fa-check.fa-stack-1x.fa-inverse {
+    line-height: 2;
+  }
+
+  .icon-box {
+    background-color: var(--blue-1);
+    color: #fff;
+    font-size: 0.5625em;
+    padding: 0.35em 0.5em;
+    border-radius: 0.4em;
+    i,
+    svg {
+      font-size: 0.875em;
+    }
+  }
+
+  .username-wrapper .fc-online-status {
+    margin-right: 0;
+  }
+
+  .col-name {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .col-name .user-name {
+    font-size: 0.75em;
+    line-height: 1.2;
+    margin-right: 0.25em;
+  }
+
+  .user-icon {
+    font-size: 1em;
+    margin: 0 0.3em 0em 0;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .user-icon .icon-stack {
+    margin-right: 0.1em;
+  }
+
+  .only-username {
+    pointer-events: all;
+    font-weight: bold;
+  }
+
+  .only-username .user-icon {
+    margin: 0 0.05em 0 0.1em;
+    font-size: 1em;
+  }
+
+  .tooltiptext {
+    width: 12em;
+    margin-left: -6em;
+    z-index: 4;
+  }
+
+  .fa-stack {
+    font-size: 0.5em;
+  }
+}

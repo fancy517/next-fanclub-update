@@ -1,0 +1,22 @@
+.fc-plan-promotion-started-notification {
+  display: flex;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+
+  .notification-type {
+    color: var(--orange-1);
+    font-size: 2em;
+    margin-right: 0.5em;
+  }
+
+  .notification-content {
+    align-items: center;
+    font-size: 1em;
+  }
+
+  .user-name {
+    display: inline-block;
+    flex: 0 0 auto;
+  }
+}

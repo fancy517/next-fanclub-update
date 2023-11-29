@@ -1,0 +1,394 @@
+.fc-messages-conversation-route {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .back-button {
+    cursor: pointer;
+    padding: 0.25em;
+    font-size: 1.25em;
+    margin-right: 0.5em;
+    display: none;
+    align-items: center;
+  }
+
+  .back-button:hover {
+    color: var(--blue-1);
+  }
+
+  .message-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-top: none;
+    border-right: none;
+    z-index: 1;
+  }
+
+  .back-button-always {
+    cursor: pointer;
+    padding: 0.25em;
+    font-size: 1.25em;
+    margin-right: 0.5em;
+    display: flex;
+  }
+
+  .back-button-always:hover {
+    color: var(--blue-1);
+  }
+
+  .gallery-sub-title {
+    line-height: 1.2;
+    vertical-align: text-bottom;
+  }
+
+  .gallery-sub-title .fc-account-username {
+    min-height: 0;
+  }
+
+  .media-content {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    border-top: none;
+    border-right: none;
+    z-index: 1;
+  }
+
+  .media-content .grid-media {
+    background-color: silver;
+    flex: 0 0 calc(33% - 4px);
+    margin: 2px;
+    position: relative;
+  }
+
+  .media-content .grid-media .box-sizer {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+
+  .media-content .grid-content-box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .grid-media-item {
+    width: 100%;
+    height: 100%;
+  }
+
+  .user-options {
+    width: 8em;
+    font-size: 0.7em;
+    text-align: center;
+  }
+
+  .user-options .dropdown-title {
+    width: auto;
+  }
+
+  .content-header-sub-row {
+    margin-top: 2px;
+  }
+
+  .message-content-header {
+    padding: 0 1em;
+    display: flex;
+    margin-top: 0em;
+    flex-direction: row;
+    align-items: center;
+    flex: 0 0 auto;
+    border-bottom: 1px solid transparent;
+    z-index: 2;
+    white-space: nowrap;
+    height: 3.5em;
+    box-sizing: border-box;
+  }
+
+  .divider {
+    color: var(--dark-blue-1);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    line-height: 1.1em;
+    margin-top: 1px;
+    font-weight: normal;
+  }
+
+  .active-status {
+    line-height: 1.1em;
+    margin-top: 1px;
+    font-weight: normal;
+  }
+
+  .gallery-hot-icon {
+    line-height: 1.1em;
+    margin-top: 1px;
+    font-weight: normal;
+  }
+
+  .gallery-hot-icon i {
+    vertical-align: bottom;
+  }
+
+  .message-content-header-avatar {
+    flex: 0 0 auto;
+    margin-right: 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .message-content-header-avatar .avatar {
+    width: 1.9em;
+    height: 1.9em;
+  }
+
+  .message-content-header-contact {
+    flex: 0 1 auto;
+    font-size: 1em;
+    font-weight: bold;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .message-content-header-contact-2 {
+    flex: 0 0 auto;
+    font-size: 1em;
+    font-weight: bold;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .message-content-header-options {
+    margin-left: 0em;
+    color: var(--dark-blue-1);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+  }
+
+  .message-content-header-options > div {
+    margin: 0 0.5em;
+    font-size: 1.125em;
+  }
+
+  .message-content-header-options > div:hover {
+    color: var(--blue-2);
+  }
+
+  .message-content-user-status {
+    margin: 0 0.25em 0 1em;
+  }
+
+  .message-content-user-status select {
+    background-color: var(--dark-3);
+    color: var(--pure-white);
+    padding: 0.5em 2em;
+    border-radius: 1em;
+    border: 1px solid transparent;
+  }
+
+  .message-content-user-status select option {
+    border: 1px solid transparent;
+    padding: 0.9em 1em;
+  }
+
+  .feed-item-actions {
+    padding: 0.25em;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    color: var(--font-1);
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    position: relative;
+    line-height: 1em;
+    margin-left: 0.5em;
+    align-self: center;
+  }
+
+  .feed-item-actions > .navigation-icon {
+    font-size: 0.33em;
+    margin: 0 0.3em;
+  }
+
+  .dropdown-list.fc-messages-conversation-route-content {
+    bottom: auto;
+    left: auto;
+    top: 2.5em;
+    right: 0em;
+    padding: 0 !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left: -1em;
+    z-index: 10;
+    max-height: 22em;
+    i {
+      width: 1em;
+    }
+  }
+
+  .dropdown-item {
+    width: auto;
+    background-color: var(--dropdown-bg-color);
+    text-align: left;
+    display: flex;
+    white-space: nowrap;
+    flex-direction: row;
+    align-items: center;
+    color: var(--font-1);
+  }
+
+  .fc-account-username {
+    min-height: 1em;
+  }
+
+  .dropdown-item i {
+    margin-right: 0.75em;
+  }
+
+  .dropdown-item:hover {
+    color: var(--pure-inversed);
+    background-color: var(--dropdown-bg-color-hover);
+  }
+
+  .dropdown-open .dropdown-list.fc-messages-conversation-route-content {
+    display: flex;
+  }
+
+  .message-route-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--nav-color);
+    position: relative;
+    border-bottom: 1px var(--border-color);
+    height: calc(3.25em);
+    line-height: 1;
+  }
+
+  .message-route-header .logo {
+    height: 1.5em;
+    width: auto;
+  }
+
+  .message-route-header .user-account {
+    flex: 0 0 auto;
+    font-size: 0.875em;
+    margin: 0 0 0 0;
+  }
+
+  .message-route-header .avatar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .message-route-header .avatar-container .user-avatar {
+    height: 2.5em;
+    position: relative;
+    width: 2.5em;
+  }
+
+  .message-route-header .balance-dropdown {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .message-route-header .balance-dropdown .dropdown-list {
+    background-color: var(--dropdown-bg-color);
+    border-radius: var(--border-radius-2);
+    max-height: calc(100vh - 9em);
+    overflow-y: auto;
+    top: 2.75em;
+    padding: 1em 0;
+    width: 18em;
+  }
+
+  .message-route-header .balance-dropdown .fc-wallet-balance-shop {
+    box-sizing: border-box;
+    font-size: 0.75em;
+    line-height: 1.6em;
+    max-height: unset !important;
+  }
+
+  .message-route-header .balance-component {
+    min-width: 0;
+    align-self: center;
+    font-size: 0.875em;
+    background-color: var(--dark-1-2);
+    padding: 0.39em 1em;
+    border-radius: var(--border-radius-2);
+  }
+
+  .message-route-header .balance-dropdown {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 1.6;
+  }
+
+  .message-route-header-left {
+    flex: 1;
+    padding-left: 0.75em;
+  }
+
+  .message-route-header-center {
+    flex: 0 0 auto;
+  }
+
+  .message-route-header-right {
+    flex: 1;
+    justify-content: flex-end;
+    padding-right: 0.75em;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .back-button {
+      display: flex;
+    }
+  }
+
+  @media only screen and (max-width: 800px),
+    only screen and (max-height: 900px) and (max-width: 1000px),
+    only screen and (max-height: 480px) {
+    .message-content-header {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 3.25em;
+      background-color: var(--nav-color);
+    }
+
+    .message-content,
+    .media-content {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: calc(var(--navbarMobileHeight) + 3.25em);
+      bottom: var(--navbarMobileHeight);
+      border: none;
+    }
+  }
+}

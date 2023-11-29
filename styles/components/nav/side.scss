@@ -1,0 +1,182 @@
+.fc-nav-menu-side {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20em;
+  z-index: 2;
+  background-color: var(--dropdown-bg-color);
+  border-left: 1px solid var(--border-color);
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .user-account {
+    flex: 0 0 auto;
+    font-size: 0.875em;
+    margin: 0 0.75em 0 1.25em;
+  }
+
+  .user-avatar {
+    height: 2.5em;
+    position: relative;
+    width: 2.5em;
+  }
+
+  .beta {
+    line-height: 1;
+    color: var(--blue-1);
+    vertical-align: text-top;
+  }
+
+  .avatar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .user-account .dropdown-icon {
+    font-size: 0.8em;
+    margin: 0 0.5em;
+  }
+
+  .user-account .dropdown-icon .open {
+    display: none;
+  }
+
+  .user-account {
+    position: Relative;
+  }
+
+  .user-account-dropdown {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 2em;
+    right: 0;
+    z-index: 2;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .dropdown-header {
+    padding: 0.75em 1em 0.5em 1em;
+  }
+
+  .seperator {
+    width: 100%;
+    height: 2px;
+    flex: 0 0 auto;
+  }
+
+  .user-account-dropdown .dropdown-list {
+    pointer-events: all;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    font-size: 1em;
+    padding: 0.25em;
+    overflow: hidden;
+    width: 18em;
+    max-height: calc(100vh - 9.75em);
+    overflow-y: auto;
+    top: 1.75em;
+  }
+
+  .user-account-dropdown .dropdown-item {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--font-1);
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1em;
+  }
+
+  .user-account-dropdown .dropdown-item i {
+    margin-right: 0.5em;
+    width: 1.5em;
+  }
+
+  .user-account-dropdown .dropdown-item:hover {
+    background-color: var(--dropdown-bg-color-hover);
+  }
+
+  .dropdown-open .user-account-dropdown {
+    display: flex;
+  }
+
+  .dropdown-open .tooltiptext {
+    display: none !important;
+  }
+
+  .user-avatar,
+  .user-avatar * {
+    pointer-events: none !important;
+  }
+
+  .user-account:hover .dropdown-icon .open {
+    display: block;
+  }
+
+  .user-account:hover .dropdown-icon .closed {
+    display: none;
+  }
+
+  .dropdown-item i {
+    font-size: 1em;
+    margin-right: 0.7em;
+  }
+
+  .dropdown-item {
+    text-decoration: none;
+    display: flex;
+  }
+
+  app-zendesk-support-button {
+    position: relative;
+    bottom: unset;
+    right: unset;
+    width: 100%;
+  }
+
+  app-zendesk-support-button .support-btn {
+    padding: 0;
+  }
+
+  @media only screen and (max-width: 800px),
+    only screen and (max-height: 900px) and (max-width: 1000px),
+    only screen and (max-height: 480px) {
+    .more-dropdown {
+      font-size: 0.875em;
+    }
+
+    .user-account-dropdown {
+      position: fixed;
+      flex-direction: column;
+      top: calc(3.25em - 0.25em);
+      right: 0;
+      bottom: 5.25em;
+      z-index: 2;
+      pointer-events: none;
+      z-index: 2;
+      font-size: 1em;
+    }
+
+    .user-account-dropdown .dropdown-list {
+      top: 1.5em;
+    }
+
+    .user-account-dropdown .dropdown-item:hover {
+      background-color: inherit;
+    }
+  }
+}
+@media only screen and (max-width: 380px) {
+  .fc-nav-menu-side {
+    width: 14em;
+  }
+}

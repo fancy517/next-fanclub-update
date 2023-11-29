@@ -1,0 +1,56 @@
+.fc-tip-goal {
+  color: var(--dark-blue-1);
+  min-width: 0;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+.fc-tip-goal > div,
+.fc-tip-goal > div > i,
+.fc-tip-goal > div > svg,
+.fc-tip-goal > div > div {
+  vertical-align: middle;
+  line-height: 1.2;
+}
+
+.fc-tip-goal {
+  .tip-goal {
+    background-color: var(--input-bg);
+    border: 1px solid var(--blue-1);
+    border-radius: 1em;
+    padding: 0.5em 0.9em;
+    line-height: 1.2;
+    align-items: center;
+    position: relative;
+  }
+
+  .tip-goal:hover .tip-hover-blue {
+    color: var(--blue-1);
+  }
+
+  .label {
+    line-height: 1.2;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+  }
+
+  .progress-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 2em;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .progress {
+    width: 0;
+    height: 100%;
+    background-color: var(--blue-1-alpha-2);
+  }
+}

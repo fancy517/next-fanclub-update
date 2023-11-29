@@ -1,0 +1,72 @@
+.xd-switch {
+  display: block;
+
+  .switch {
+    background-color: var(--switch);
+    border-radius: 1em;
+    padding: 0em;
+    height: 1em;
+    width: 2.5em;
+    cursor: pointer;
+    display: flex;
+    transition: background-color 100ms ease-out;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .switch.selected {
+    background-color: var(--switch-selected);
+    transition: background-color 100ms ease-out;
+  }
+
+  .switch-toggle {
+    margin-top: -0.125em;
+    width: 1.25em;
+    height: 1.25em;
+    position: relative;
+    border-radius: 1em;
+    background-color: var(--switch-toggle);
+    box-shadow: var(--box-shadow-1);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .switch-toggle:after {
+    content: '';
+    position: absolute;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 9999px;
+    pointer-events: none;
+    background-color: var(--switch-toggle-active);
+    transition: transform 100ms ease;
+    opacity: 0;
+  }
+
+  .switch:active .switch-toggle:after,
+  .switch-toggle:active:after {
+    transition: transform 100ms ease;
+    transform: scale(2.4);
+    opacity: 1;
+  }
+
+  .switch.selected .switch-toggle {
+    background-color: var(--switch-toggle-selected);
+    transform: translateX(1.5em);
+  }
+
+  .animate-transform {
+    transition-property: all;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 150ms;
+    -webkit-transition-timing-function: ease-in;
+  }
+}

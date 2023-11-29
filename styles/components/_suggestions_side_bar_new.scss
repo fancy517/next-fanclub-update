@@ -1,0 +1,119 @@
+.fc-suggestions-side-bar-new {
+  .feed-suggestions {
+    align-self: flex-start;
+    flex: 0 0 auto;
+    max-height: 100%;
+    box-sizing: border-box;
+    width: 20em;
+    padding: 1em 0 0 0;
+    border-radius: var(--border-radius-2);
+    pointer-events: all;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &.feed-item {
+    .feed-suggestions-wrapper {
+      width: 100%;
+    }
+    .feed-suggestions-list {
+      width: 100%;
+    }
+    .feed-suggestions {
+      width: 100%;
+    }
+
+    .feed-suggestions-list-page {
+      width: 100%;
+    }
+  }
+
+  .hover-underline:hover {
+    text-decoration: underline;
+  }
+
+  .spin-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .suggestions-header {
+    display: flex;
+    font-weight: bold;
+    padding: 0 0.5em 0.5em 0.5em;
+    align-items: center;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    i,
+    svg {
+      margin-left: 1em;
+    }
+
+    i.disabled,
+    svg.disabled {
+      cursor: default;
+      color: rgba(32, 37, 47, 0.631372549) !important;
+    }
+  }
+
+  .feed-suggestions-dots {
+    i,
+    svg {
+      margin: 0 0.6em;
+      font-size: 0.5em;
+      &.bigxd {
+        margin: 0 0.6em;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .feed-suggestion {
+    cursor: pointer;
+    display: flex;
+    height: 92px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 8px 12px 8px 12px;
+    border-top: 1px solid transparent;
+  }
+
+  .feed-suggestion:hover {
+    background-color: var(--hover-alpha);
+  }
+
+  .feed-suggestions-list {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .feed-suggestions-list-page {
+    width: calc(20em);
+    flex: 0 0 auto;
+  }
+
+  .feed-suggestion-wrapper {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .feed-suggestions-wrapper {
+    max-height: 100% !important;
+    height: 100%;
+    overflow: hidden;
+  }
+}

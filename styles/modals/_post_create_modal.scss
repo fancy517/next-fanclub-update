@@ -1,0 +1,50 @@
+.fc-post-create-modal {
+  height: auto;
+  max-height: 100%;
+
+  .modal {
+    width: 40em;
+    max-width: 100%;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+    max-height: 100%;
+  }
+
+  .modal-header {
+    display: flex;
+    flex: 0 0 auto;
+    color: var(--font-1);
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .modal-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-footer {
+    padding: 0.25em;
+  }
+
+  .fc-post-creation {
+    border-bottom: none;
+    overflow: visible;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .fc-post-create-modal {
+    height: 100%;
+
+    .modal {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+    }
+  }
+}

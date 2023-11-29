@@ -1,0 +1,56 @@
+.create-post-modal {
+  width: 40em;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+
+  .modal {
+    width: 40em;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .seperator {
+    border-top: 1px solid transparent;
+    border-color: var(--border-color) !important;
+    height: 1px;
+    width: 100%;
+  }
+
+  .modal-content {
+    textarea {
+      width: 100%;
+      resize: none;
+    }
+
+    .post-options {
+      font-size: 0.9em;
+      color: var(--dark-blue-1);
+    }
+
+    .reply-permission {
+      margin-top: 1em;
+
+      .reply-permission-description {
+        font-size: 0.8em;
+        font-weight: bold;
+        color: var(--dark-blue-1);
+      }
+    }
+
+    .footer-actions {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 0.5em;
+
+      .action-btn {
+        i:first-child {
+          font-size: 1.15em;
+        }
+      }
+    }
+  }
+}

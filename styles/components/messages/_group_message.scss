@@ -1,0 +1,443 @@
+.fc-group-message {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  app-embedded-content {
+    width: 100%;
+  }
+
+  .message {
+    border-radius: var(--border-radius-2);
+    background-color: var(--dark-5);
+    margin: 0.25em 0.5em;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 15em;
+    display: flex;
+  }
+
+  .is-reply .message {
+    max-width: calc(60% - 2em);
+    min-width: 13em;
+    width: calc(100% - 2em);
+  }
+
+  .message-wrapper {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+  }
+
+  .reply-footer-content .fc-account-username .display-name {
+    font-weight: 400;
+  }
+
+  .tooltip-list {
+    z-index: 5;
+  }
+
+  .reply-header {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    margin-left: 10px;
+    margin-top: 9px;
+    justify-content: flex-start;
+  }
+
+  .reply-header-content {
+    border-radius: var(--border-radius-2);
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .reply-footer {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    margin-top: 2px;
+    justify-content: flex-start;
+  }
+
+  .reply-footer-content {
+    border-radius: var(--border-radius-2);
+    margin: 0em 0.5em;
+    margin-top: -0.5em;
+    margin-bottom: 0.5em;
+    max-width: 60%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 15em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .reply-avatar {
+    width: 1.4em;
+    height: 1.4em;
+  }
+
+  .actions {
+    flex: 0 0 auto;
+    width: 4.25em;
+    align-self: flex-end;
+    text-align: left;
+    justify-content: flex-start;
+    color: var(--dark-blue-1);
+  }
+
+  .reply-footer-content .fc-account-username .username-wrapper .display-name {
+    margin-right: 0 !important;
+  }
+
+  .transparent-dropdown {
+    opacity: 0;
+    transition: opacity 75ms ease-in;
+  }
+
+  .transparent-dropdown.dropdown-open {
+    opacity: 1;
+  }
+
+  .delete-my-message {
+    display: none;
+    opacity: 0;
+    transition: opacity 75ms linear;
+  }
+
+  .message-reply-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .fc-button-new {
+    align-items: center;
+  }
+
+  .delete-my-message i {
+    margin-bottom: 5px;
+  }
+
+  .hover-visible {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 75ms ease-in;
+  }
+
+  .actions .icon-stack {
+    margin-bottom: 4px;
+  }
+
+  .message-attachment {
+    flex: 0 0 auto;
+    position: relative;
+  }
+
+  .message-attachment .attachment {
+    width: 100%;
+    height: 18em;
+    display: flex;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+  .message-attachments {
+    flex: 0 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+
+  .attachment.auto-size {
+    height: auto !important;
+    max-height: 100%;
+  }
+
+  .message-attachments .attachment {
+    position: relative;
+    flex: 1 0 50%;
+    height: 18em;
+    display: flex;
+    cursor: pointer;
+    padding: 1px;
+    box-sizing: border-box;
+  }
+
+  .more-attachments-overlay {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    bottom: 0;
+    color: var(--pure-white);
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .more-attachments-overlay span {
+    font-size: 1.6em;
+    margin: 0 0 0.2em 0.2em;
+    vertical-align: middle;
+  }
+
+  .message-text {
+    padding: 0.35em 0.75em;
+    font-size: 0.875em;
+
+    color: var(--font-1);
+    line-height: 1.6em;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+
+  .emoji {
+    width: 24px;
+    height: 24px;
+    transition: transform 150ms ease-in-out;
+    margin: 0.4em;
+    cursor: pointer;
+  }
+
+  .emoji:hover {
+    transform: scale(1.25);
+  }
+
+  .emoji.heart {
+    background: url(/assets/emoji/red-heart.svg);
+    background-position: center;
+    background-size: contain;
+  }
+
+  .emoji.cry-laugh {
+    background: url(/assets/emoji/face-with-tears-of-joy.svg);
+    background-position: center;
+    background-size: contain;
+  }
+
+  .emoji.surprised {
+    background: url(/assets/emoji/face-with-open-mouth.svg);
+    background-position: center;
+    background-size: contain;
+  }
+
+  .emoji.sad {
+    background: url(/assets/emoji/sad-but-relieved-face.svg);
+    background-position: center;
+    background-size: contain;
+  }
+
+  .emoji.fire {
+    background: url(/assets/emoji/fire.svg);
+    background-position: center;
+    background-size: contain;
+  }
+
+  .emoji.thumbs-up {
+    background: url(/assets/emoji/thumbs-up.svg);
+    background-position: center;
+    background-size: contain;
+  }
+
+  .emoji.thumbs-down {
+    background: url(/assets/emoji/thumbs-down.svg);
+    background-position: center;
+    background-size: contain;
+  }
+
+  .tap-backs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0.25em 0.25em 0.25em 0.5em;
+  }
+
+  .tap-backs:empty {
+    margin: 0;
+  }
+
+  .liked-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--dark-blue-1);
+    font-size: 0.75em;
+    padding: 0.25em 0.25em 0.25em 0.45em;
+    border-radius: 0.5em;
+    margin-right: 2px;
+    cursor: pointer;
+  }
+
+  .liked-type.liked {
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+  }
+
+  .liked-type.liked:hover {
+    padding: 0.25em 0.25em 0.25em 0.25em;
+  }
+
+  .liked-type:hover .emoji {
+    transform: scale(1.25);
+  }
+
+  .liked-type .emoji {
+    cursor: inherit;
+  }
+
+  .unlike-icon {
+    display: none;
+    visibility: hidden;
+    animation: dropdown 150ms;
+  }
+
+  .liked-type.liked:hover .unlike-icon {
+    visibility: visible;
+    display: inline;
+  }
+
+  .tap-backs .emoji {
+    margin: 0 0.2em;
+  }
+
+  .liked-type.liked:hover .emoji {
+    transform: scale(0.75);
+    margin: 0em 0em;
+  }
+
+  .overlay-box {
+    width: 10px;
+    margin-left: -1.25em;
+    margin-top: 0.7em;
+    height: calc(100% - 5px);
+    position: absolute;
+    border: 3px solid transparent;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-left-color: var(--border-color);
+    border-top-color: var(--border-color);
+    border-bottom-color: var(--border-color);
+  }
+}
+
+.my-message.fc-group-message .tap-backs {
+  justify-content: flex-end;
+}
+
+.fc-group-message:hover .hover-visible {
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 50ms linear;
+}
+
+.my-message.fc-group-message .actions {
+  order: 1;
+  text-align: right;
+  justify-content: flex-end;
+  margin-left: 0em;
+  margin-right: 0.4em;
+}
+
+.my-message.fc-group-message .delete-my-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-message.fc-group-message
+  > .message-reply-wrapper:not(.is-reply)
+  .reply-footer {
+  justify-content: flex-end;
+}
+
+.my-message.fc-group-message
+  > .message-reply-wrapper:not(.is-reply)
+  .reply-footer-content {
+  justify-content: flex-end;
+}
+
+.my-message.fc-group-message
+  > .message-reply-wrapper:not(.is-reply)
+  .reply-header {
+  justify-content: flex-end;
+}
+
+.my-message.fc-group-message
+  .message-reply-wrapper:not(.is-reply)
+  .message-wrapper {
+  justify-content: flex-end;
+}
+
+.my-message.fc-group-message .message-wrapper > .message {
+  order: 2;
+}
+
+.my-message.fc-group-message
+  > .message-reply-wrapper
+  > .message-wrapper
+  .message {
+  background-color: var(--blue-1-alpha-2);
+}
+
+.my-message.fc-group-message
+  > .message-reply-wrapper:not(.is-reply)
+  > .message-wrapper
+  .message {
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 455px) {
+  .fc-group-message .emoji {
+    margin: 0.2em;
+  }
+
+  .fc-group-message .tooltip-list {
+    width: 15em;
+    margin-left: -7.5em;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .fc-group-message .tooltip-list {
+    right: 0;
+    left: unset;
+    margin-left: unset;
+  }
+
+  .my-message.fc-group-message .tooltip-list {
+    left: 50%;
+    right: unset;
+    margin-left: -7.5em;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .my-message.fc-group-message .tooltip-list {
+    left: 0;
+    right: unset;
+    margin-left: unset;
+  }
+}

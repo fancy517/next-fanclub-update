@@ -1,0 +1,185 @@
+.fc-online-following-streams {
+  .feed-suggestions {
+    align-self: flex-start;
+    flex: 0 0 auto;
+    max-height: 100%;
+    box-sizing: border-box;
+    width: 20em;
+    padding: 1em 0 0 0;
+    border-radius: var(--border-radius-2);
+    pointer-events: all;
+    background-color: var(--dark-5);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &.feed-item {
+    .feed-suggestions-wrapper {
+      width: 100%;
+    }
+    .feed-suggestions-list {
+      width: 100%;
+    }
+    .feed-suggestions {
+      width: 100%;
+    }
+    .feed-suggestions-list-page {
+      width: 100%;
+    }
+  }
+
+  .hover-underline:hover {
+    text-decoration: underline;
+  }
+
+  .spin-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .suggestions-header {
+    display: flex;
+    font-weight: bold;
+    padding: 0 0.5em 0.5em 0.5em;
+    align-items: center;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    i,
+    svg {
+      margin-left: 1em;
+    }
+  }
+
+  .actions i.disabled {
+    cursor: default;
+    color: rgba(32, 37, 47, 0.631372549) !important;
+  }
+
+  .feed-suggestions-dots i,
+  .feed-suggestions-dots svg {
+    margin: 0 0.6em;
+    font-size: 0.5em;
+  }
+
+  .feed-suggestion {
+    cursor: pointer;
+    display: flex;
+    height: 92px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 8px 12px 8px 12px;
+    border-top: 1px solid transparent;
+  }
+
+  .feed-suggestion:hover {
+    background-color: var(--hover-alpha);
+  }
+
+  .feed-suggestions-list {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .feed-suggestions-list-page {
+    width: calc(20em);
+    flex: 0 0 auto;
+  }
+
+  .feed-suggestion-wrapper {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .feed-suggestions-wrapper {
+    max-height: 100% !important;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .btn {
+    line-height: 1.6em;
+    border-radius: 1.25em;
+  }
+
+  .fc-account-username .user-name {
+    margin-top: 0.3em;
+    color: var(--font-1) !important;
+  }
+
+  .fllow-button {
+    font-size: 0.75em;
+  }
+
+  .fc-account-avatar * {
+    pointer-events: none !important;
+  }
+
+  .feed-suggestion-header {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    padding: 0.75em 0.5em;
+  }
+
+  .fc-account-banner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    opacity: 0.6;
+  }
+
+  .feed-creator-col {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.2em;
+    align-self: center;
+  }
+
+  .feed-creator-name-wrapper {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1em;
+  }
+
+  .feed-creator-avatar {
+    border-radius: 50%;
+    margin-right: 0.5em;
+    width: 3em;
+    height: 3em;
+    flex: 0 0 auto;
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 800px),
+  only screen and (max-height: 900px) and (max-width: 1000px),
+  only screen and (max-height: 480px) {
+  .fc-online-following-streams {
+    display: none;
+  }
+}

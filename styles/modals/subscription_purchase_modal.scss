@@ -1,0 +1,151 @@
+.fc-subscription-purchase-modal {
+  pointer-events: none;
+  z-index: 1;
+  border-radius: 0.25em;
+  max-width: 100%;
+  max-height: 90%;
+  width: 28em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .renew-section {
+    margin-bottom: 0.5em;
+    padding: 0.5em 1.25em;
+    box-sizing: border-box;
+    font-size: 0.875em;
+  }
+
+  .overlay {
+    margin-bottom: -1.8em;
+    z-index: 4;
+    color: var(--pure-white);
+  }
+
+  .tier-title-header {
+    max-width: 80%;
+  }
+
+  .modal {
+    pointer-events: all;
+    flex: 0 0 auto;
+    width: 28em;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: var(--border-radius-2);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 !important;
+  }
+
+  .balance-shop {
+    width: 100%;
+    font-size: 0.875em;
+    margin-top: 1em;
+  }
+
+  .modal.padding {
+    padding: 1em;
+  }
+
+  .modal-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 0em 1em 0em;
+  }
+
+  .modal-header {
+    text-align: center;
+    padding: 0em 0em 0.5em 0em;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    color: var(--font-1);
+  }
+
+  .banner-image {
+    width: 100%;
+    height: 5em;
+    border-top-right-radius: 0.25em;
+    border-top-left-radius: 0.25em;
+    margin-top: -1px;
+    overflow: hidden;
+  }
+
+  .fc-account-avatar.avatar {
+    width: 4.5em;
+    height: 4.5em;
+    margin-top: -3.5em;
+  }
+
+  .modal-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .user-name {
+    margin: 0.5em 0 1em 0.5em;
+    font-size: 1.25em;
+  }
+
+  .processing {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 2;
+  }
+
+  .subscription-benefits {
+    padding: 1em 1.25em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.875em;
+  }
+
+  .subscription-benefits > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.25em 0;
+  }
+
+  .subscription-benefits i {
+    width: 1em;
+    margin-right: 0.5em;
+  }
+
+  .purchase-btn {
+    width: calc(100% - 2em);
+    box-sizing: border-box;
+  }
+
+  app-payment-method-select {
+    width: calc(100% - 2em);
+    box-sizing: border-box;
+  }
+
+  .promotion-disclaimer {
+    padding: 0 1em;
+    text-align: center;
+    font-size: 0.75em;
+  }
+}

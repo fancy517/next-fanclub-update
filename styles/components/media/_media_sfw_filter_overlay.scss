@@ -1,0 +1,12 @@
+.fc-media-sfw-filter-overlay {
+  padding: 0.5em;
+
+  * {
+    pointer-events: all;
+  }
+
+  i.shadow,
+  svg.shadow {
+    text-shadow: var(--text-shadow-1);
+  }
+}

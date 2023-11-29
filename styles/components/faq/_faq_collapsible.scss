@@ -1,0 +1,25 @@
+.fc-faq-collapsible {
+  .faq-title {
+    font-weight: bold;
+    color: var(--blue-1);
+    font-size: 1.125em;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: row;
+
+    span {
+      flex: 1;
+    }
+
+    i,
+    svg {
+      flex: 0 0 auto;
+      display: inline;
+    }
+  }
+
+  .faq-text {
+    color: var(--font-1);
+  }
+}

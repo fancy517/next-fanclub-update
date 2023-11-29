@@ -1,0 +1,170 @@
+#m_affiliate_route {
+  .page-content {
+    padding: 0.5em 0.75em 1em 0.75em;
+    margin: 0 1em;
+  }
+
+  video {
+    width: 50%;
+    height: auto;
+  }
+
+  .max-width-100 {
+    max-width: 100%;
+  }
+
+  .max-width-text {
+    max-width: 40em;
+  }
+
+  .input-title {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: var(--font-1);
+    margin-bottom: 0.25em;
+  }
+
+  .referral-users {
+    max-width: 30em;
+    max-height: 50em;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .referral-users .avatar {
+    width: 2em;
+    height: 2em;
+  }
+
+  .withdraw-info {
+    padding: 2em 0;
+    border-radius: var(--border-radius-2);
+  }
+
+  .seperator {
+    width: 100%;
+    height: 1px;
+    margin: 2em 0;
+  }
+
+  .outline-box {
+    border: solid 1px var(--border-color);
+    width: 100%;
+    padding: 2em;
+    align-items: center;
+    border-radius: var(--border-radius-2);
+  }
+
+  .transaction-history-wrapper {
+    border-radius: var(--border-radius-2);
+    overflow: hidden;
+  }
+
+  .transaction-history {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 0.25em;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .table-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.75em;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0;
+    border-top: 1px solid rgba(145, 164, 206, 0.16);
+    color: var(--dark-blue-1);
+  }
+
+  .table-nav .nav-item {
+    margin: 0 1em;
+    padding: 0.4em 0.55em 0.34em 0.55em;
+    border-radius: 0.25em;
+    line-height: 1em;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .table-nav .nav-item.selected {
+    margin: 0 1.25em;
+    line-height: 1em;
+    cursor: default;
+    border: 1px solid var(--dark-blue-1);
+  }
+
+  .table-nav .nav-item.disabled {
+    margin: 0 1.25em;
+    line-height: 1em;
+    cursor: default;
+  }
+
+  .input-group {
+    font-size: 0.875em;
+  }
+
+  .input-group .input-addon {
+    padding: 0.7em 0.75em;
+    font-size: 0.875em;
+  }
+
+  .input-group input {
+    padding: 0.7em 0.5em;
+    font-size: 0.875em;
+    line-height: 1.6em;
+    min-width: 1em;
+  }
+
+  .select-method {
+    width: 100%;
+  }
+
+  .select-method .dropdown-title {
+    width: 100%;
+  }
+
+  .select-method .dropdown-list {
+    width: 100%;
+  }
+
+  .dropdown-item {
+    text-align: left;
+  }
+
+  .dropdown-item i,
+  .dropdown-item svg {
+    margin-right: 0.4em;
+  }
+
+  .dropdown-title i,
+  .dropdown-title svg {
+    position: absolute;
+    right: 1em;
+  }
+
+  .dropdown-open .dropdown-list {
+    display: flex;
+    z-index: 5;
+  }
+
+  .dropdown-open .fa-chevron-down {
+    display: none;
+  }
+
+  .fa-chevron-up {
+    display: none;
+  }
+
+  .dropdown-open .fa-chevron-up {
+    display: inline;
+  }
+
+  .dropdown-title:hover i {
+    color: var(--blue-1);
+  }
+}

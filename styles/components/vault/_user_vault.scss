@@ -1,0 +1,542 @@
+.fc-user-vault {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 0 0 auto;
+  padding: 0.25em 0.75em;
+  line-height: 1.6;
+  box-sizing: border-box;
+
+  .dropdown-list {
+    overflow-y: auto;
+  }
+
+  .transparent-dropdown .fa-chevron-up {
+    display: none;
+  }
+
+  .dropdown-open .fa-chevron-up {
+    display: inline;
+  }
+
+  .fc-account-media {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bubble.size-limited {
+    max-width: 33%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .fc-account-media .volume-control {
+    display: none !important;
+  }
+
+  .fc-account-media .repeat {
+    display: none !important;
+  }
+
+  .fc-account-media .play-button {
+    display: none !important;
+  }
+
+  .fc-account-media .quality-control {
+    display: none !important;
+  }
+
+  .fc-account-media .stats-overlay {
+    display: none !important;
+  }
+
+  .close-toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--input-bg);
+    border-radius: var(--border-radius-2);
+    padding: 0.6em;
+    box-sizing: border-box;
+  }
+
+  .vault-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 0.5em;
+  }
+
+  .dropdown-list.albums {
+    max-width: 10em;
+    top: 2.5em;
+  }
+
+  .dropdown-list.albums .dropdown-item {
+    max-width: 10em;
+  }
+
+  app-media-upload-input {
+    width: 100%;
+    display: flex;
+    flex: 0 0 auto;
+  }
+
+  .bubble-wrap {
+    flex: 1;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .bubble {
+    padding: 0.35em 1em;
+    border-radius: 1.5em;
+    margin: 0.25em 0.5em 0.25em 0;
+    background-color: var(--dark-2);
+    font-size: 0.875em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: background-color 100ms linear;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .bubble i {
+    line-height: 1.6;
+  }
+
+  .bubble svg {
+    height: 1.6em;
+  }
+
+  .bubble.active {
+    transition: background-color 100ms linear;
+    background-color: var(--blue-1-alpha-2);
+  }
+
+  .bubble:hover {
+    transition: background-color 100ms linear;
+    background-color: var(--blue-1-alpha-2);
+  }
+
+  .close-btn {
+    display: none;
+  }
+
+  .bubble.active .close-btn {
+    display: flex;
+  }
+
+  .dropdown-item.active .close-btn {
+    display: flex;
+  }
+
+  .vault-actions {
+    flex: 0 0 auto;
+    align-items: center;
+    align-self: flex-start;
+  }
+
+  .vault-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+    position: relative;
+    overscroll-behavior: contain;
+  }
+
+  .vault-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vault-row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .render-container {
+    margin: 5px;
+    flex: 1 1 250px;
+    max-width: 425px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .render-container:empty {
+    flex: 1 1 250px;
+    height: 0;
+    margin: 0 3px;
+  }
+
+  .segmentation-container {
+    flex: 1 1 100%;
+    font-weight: bold;
+    height: 26px;
+    overflow: hidden;
+  }
+
+  .image-date {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 3px 7px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-weight: bold;
+    font-size: 11px;
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+  }
+
+  .image-controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .image-controls.image {
+    left: 0;
+    bottom: 0;
+  }
+
+  .image-controls:hover {
+    color: var(--blue-1);
+  }
+
+  .image-controls i {
+    font-size: 1.5em;
+    transition: color 100ms linear;
+  }
+
+  .actions-highlight {
+    animation: _ngcontent-ng-c3349154027_shake 750ms ease-in-out;
+    background-color: var(--blue-1-alpha-2);
+  }
+
+  @keyframes _ngcontent-ng-c3349154027_shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  .vault-albums-container {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+    position: relative;
+    overscroll-behavior: contain;
+  }
+
+  .quick-menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .vault-albums {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .vault-album {
+    margin: 5px;
+    flex: 1 1 250px;
+    max-width: 425px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+
+    -webkit-user-select: none;
+
+    user-select: none;
+  }
+
+  .xd-dragging-placeholder {
+    margin: 5px;
+    flex: 1 1 250px;
+    max-width: 425px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    -webkit-touch-callout: none;
+
+    -webkit-user-select: none;
+
+    user-select: none;
+  }
+
+  .vault-album-media {
+    flex: 1;
+    overflow: hidden;
+    background-color: var(--dark-2);
+    border-radius: var(--border-radius-2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vault-album-footer {
+    flex: 0 0 auto;
+    line-height: 1.1;
+  }
+
+  .vault-album:empty {
+    flex: 1 1 250px;
+    height: 0;
+    margin: 0 3px;
+  }
+
+  .album-cover-media .video-controls {
+    display: none;
+  }
+
+  .bubble.reorder-mode {
+    background-color: var(--blue-1);
+  }
+
+  .xd-drag-active .vault-album-media {
+    cursor: move !important;
+  }
+
+  .xd-drag-active .vault-album-media * {
+    cursor: move !important;
+  }
+
+  .xd-drag-active .vault-album:nth-child(2n) {
+    animation-name: _ngcontent-ng-c3349154027_keyframes1;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 10%;
+    animation-duration: 0.3s;
+    animation-delay: 0.1s;
+  }
+
+  .xd-drag-active .vault-album:nth-child(2n-1) {
+    animation-name: _ngcontent-ng-c3349154027_keyframes2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: 30% 5%;
+    animation-duration: 0.28s;
+  }
+
+  @keyframes _ngcontent-ng-c3349154027_keyframes1 {
+    0% {
+      transform: rotate(-0.5deg);
+      animation-timing-function: ease-in;
+    }
+
+    50% {
+      transform: rotate(0.75deg);
+      animation-timing-function: ease-out;
+    }
+  }
+
+  @keyframes _ngcontent-ng-c3349154027_keyframes2 {
+    0% {
+      transform: rotate(0.5deg);
+      animation-timing-function: ease-in;
+    }
+
+    50% {
+      transform: rotate(-0.75deg);
+      animation-timing-function: ease-out;
+    }
+  }
+
+  .xd-dragging {
+    margin-top: 0;
+    margin-left: 0;
+    z-index: 5;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .render-container {
+      margin: 5px;
+      flex: 1 1 200px;
+      max-width: 300px;
+      height: 200px;
+    }
+
+    .render-container:empty {
+      flex: 1 1 200px;
+      height: 0;
+      margin: 0 3px;
+    }
+
+    .vault-album,
+    .xd-dragging-placeholder {
+      margin: 5px;
+      flex: 1 1 200px;
+      max-width: 300px;
+      height: 240px;
+    }
+
+    .vault-album:empty {
+      flex: 1 1 200px;
+      height: 0;
+      margin: 0 3px;
+    }
+
+    .image-controls {
+      padding: 8px;
+    }
+  }
+
+  @media only screen and (max-width: 800px),
+    only screen and (max-height: 900px) and (max-width: 1000px),
+    only screen and (max-height: 480px) {
+    .render-container {
+      margin: 5px;
+      flex: 1 1 144px;
+      max-width: 200px;
+      height: 144px;
+    }
+
+    .render-container:empty {
+      flex: 1 1 144px;
+      height: 0;
+      margin: 0 3px;
+    }
+
+    .vault-album,
+    .xd-dragging-placeholder {
+      margin: 5px;
+      flex: 1 1 164px;
+      max-width: 250px;
+      height: 204px;
+    }
+
+    .vault-album:empty {
+      flex: 1 1 164px;
+      height: 0;
+      margin: 0 3px;
+    }
+
+    .image-controls {
+      padding: 7px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .render-container {
+      margin: 5px;
+      flex: 1 1 112px;
+      max-width: 160px;
+      height: 112px;
+    }
+
+    .render-container:empty {
+      flex: 1 1 112px;
+      height: 0;
+      margin: 0 3px;
+    }
+
+    .image-controls {
+      padding: 6px;
+    }
+
+    .image-date {
+      top: 6px;
+      left: 6px;
+      padding: 3px 7px;
+      border-radius: 5px;
+      font-size: 11px;
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    .vault-album,
+    .xd-dragging-placeholder {
+      margin: 5px;
+      flex: 1 1 144px;
+      max-width: 200px;
+      height: 184px;
+    }
+
+    .vault-album:empty {
+      flex: 1 1 144px;
+      height: 0;
+      margin: 0 3px;
+    }
+  }
+
+  @media only screen and (max-width: 325px) {
+    .vault-album,
+    .xd-dragging-placeholder {
+      margin: 5px;
+      flex: 1 1 104px;
+      max-width: 200px;
+      height: 164px;
+    }
+
+    .vault-album:empty {
+      flex: 1 1 104px;
+      height: 0;
+      margin: 0 3px;
+    }
+  }
+
+  @media only screen and (max-width: 280px) {
+    .vault-album,
+    .xd-dragging-placeholder {
+      margin: 5px;
+      flex: 1 1 104px;
+      max-width: 200px;
+      height: 144px;
+    }
+
+    .vault-album:empty {
+      flex: 1 1 104px;
+      height: 0;
+      margin: 0 3px;
+    }
+  }
+}

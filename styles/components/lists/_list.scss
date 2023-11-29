@@ -1,0 +1,31 @@
+.fc-list {
+  padding: 2px 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+
+  .list {
+    font-size: 0.875em;
+    padding: 2px 6px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    border-radius: var(--border-radius-2);
+  }
+
+  .list:hover {
+    background-color: var(--blue-1-alpha-2);
+  }
+
+  .checkbox i {
+    font-size: 1.5em;
+  }
+
+  .checkbox svg {
+    height: 1.5em;
+  }
+}
